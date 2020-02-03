@@ -59,11 +59,11 @@ Tipe data ini digunakan untuk menyimpan nilai yang berulang. Contoh: `Perempuan`
   
 - ***Sample***
 
-  Bagian kecil/subset dari keseluruhan data (`population`).
+  Bagian kecil/subset dari `population`.
   
 - ***Descriptive statistics***
 
-  Suatu nilai yag merangkum data, tujuannya untuk menggambarkan keadaa data secara umum.
+  Suatu nilai yag merangkum data, tujuannya untuk menggambarkan keadaan data secara umum.
   
 - ***Measures of centaral tendency***
 
@@ -71,15 +71,15 @@ Tipe data ini digunakan untuk menyimpan nilai yang berulang. Contoh: `Perempuan`
   
 - ***Mean***
 
- Nilai rata-rata (total seluruh data dibagi dengan banyaknya data), digunakan untuk menjelaskan pusat data yang bertipe numerik/angka. Nilai rata-rata suatu `population` dinotasikan oleh $\mu$, sedangkan nilai rata-rata suatu `sample` dinotasikan oleh $\bar{x}$.
+ Nilai rata-rata (total seluruh data dibagi dengan banyaknya data) dari data yang bertipe numerik/angka. Nilai rata-rata suatu `population` dinotasikan oleh $\mu$, sedangkan nilai rata-rata suatu `sample` dinotasikan oleh $\bar{x}$.
 
 - ***Quartil***
 
-  Nilai yang membagi data terurut menjadi 4 bagian sama besar (---Q1---Q2---Q3---), digunakan untuk menjelaskan data yang bertipe numrik/angka. 
+  Nilai yang membagi data terurut menjadi 4 bagian sama besar (---Q1---Q2---Q3---). 
 
 - ***Median***
 
-  Nilai yang membagi data terurut menjadi 2 bagian sama besar, digunakan untuk menjelaskan pusat data yang bertipe numerik/angka dan sering disebut sebagai `Q2`.  
+  Nilai yang membagi data terurut menjadi 2 bagian sama besar, sering disebut sebagai `Q2`.  
 
 - ***Outlier***
   
@@ -87,11 +87,11 @@ Tipe data ini digunakan untuk menyimpan nilai yang berulang. Contoh: `Perempuan`
 
 - ***Trimmed mean***
 
-  Nilai rata-rata yang diperoleh dari data terurut, yang sudah tidak terdapat `outlier` (`outlier` sudah dibuang/data sudah dipotog), digunakan untuk menjelaskan pusat data yang bertipe numerik/angka.
+  Nilai rata-rata yang diperoleh dari data terurut, yang sudah tidak terdapat `outlier` (`outlier` sudah dibuang).
 
 - ***Mode***
 
-  Nilai yang paling sering muncul, digunakan untuk mejelaskan pusat data yang bertipe kategorik.
+  Nilai yang paling sering muncul/keluar dari data bertipe kategorik .
   
 - ***Measures of spread***
 
@@ -99,23 +99,23 @@ Tipe data ini digunakan untuk menyimpan nilai yang berulang. Contoh: `Perempuan`
   
 - ***Variance***
 
-  Nilai yang menggamabarkan seberapa bervariasi/beragamnya suatu data, digunakan untuk menjelaskan sebaran data yang bertipe numerik. Semakin besar nilai `variance` maka semakin beragam suatu data (heterogen), sedangkan semakin kecil nilai `vaiance` maka semakin sama/mirip setiap observasi pada data (homogen). Data yang observasinya bernilai sama, maka `variance` sama dengan 0.
+  Nilai yang menggamabarkan seberapa bervariasi/beragamnya suatu data bertipe numerik/angka. Semakin besar nilai `variance` maka semakin beragam suatu data (heterogen), sedangkan semakin kecil nilai `vaiance` maka semakin sama/mirip setiap observasi pada data (homogen). Data yang observasinya bernilai sama, maka `variance` sama dengan 0.
 
 - ***Standard deviation***
 
-  Nilai rata-rata selisih/jarak setiap observasi dengan nilai `mean`, digunakan untuk menjelaskan sebaran data yang bertipe numerik. Diperoleh dari akar kuadrat `variance`.
+  Rata-rata selisih/jarak setiap observasi dengan nilai `mean`, diperoleh dari akar kuadrat `variance`.
   
 - ***Range***
 
-  Nilai selisih/jarak dari observasi yang nilainya paling kecil (minimum) dengan observasi yang nilainya paling besar (maksimum), digunakan untuk menjelaskan sebaran data yang bertipe numerik.
+  Selisih/jarak anatara observasi yang nilainya paling kecil (minimum) dengan yang nilainya paling besar (maksimum).
   
 - ***IQR***
 
-  Nilai selisih/jarak antara `Q1` dan `Q3`, digunakan untuk menjelaskan sebaran data yang bertipe numerik.
+  Selisih/jarak antara `Q1` dan `Q3`.
   
 - ***Standard error***
 
-  Nilai yang menggambarkan kedekatan `mean sample` dengan `mean populasi`. Semakin kecil nilai `standard error` maka semakin dekat/representatif pula `mean sample` menggambarkan `mean populasi`, dan sebaliknya.
+  Nilai yang menggambarkan kedekatan antara `sample` dan `population`. Semakin kecil nilai `standard error` maka semakin dekat/representatif pula `sample` menggambarkan `population`, dan sebaliknya.
   
 - ***Covariance***
 
@@ -123,7 +123,7 @@ Tipe data ini digunakan untuk menyimpan nilai yang berulang. Contoh: `Perempuan`
 
 - ***Correlation***  
   
-  Nilai yang menggambarkan keeratan hubungan (positif/negatif/tidak ada hubungan) antara dua variabel numerik. Nilai `correlation` mendekati 1 artinya kedua variabel berhubungan erat dan positif, nilai `correlation` mendekati -1 artinya kedua variabel berhubungan erat dan negatif, nilai `correlation` mendekati 0 artinya kedua variabel tidak berhubungan.
+  Nilai yang menggambarkan keeratan hubungan (positif/negatif/tidak ada hubungan) antara dua variabel numerik. Nilai `correlation` mendekati 1 artinya kedua variabel berhubungan erat dan hubungannya positif, nilai `correlation` mendekati -1 artinya kedua variabel berhubungan erat dan hubungannya negatif, nilai `correlation` mendekati 0 artinya kedua variabel tidak saling berhubungan.
 
 - ***Data distribution***
 
@@ -131,11 +131,11 @@ Tipe data ini digunakan untuk menyimpan nilai yang berulang. Contoh: `Perempuan`
   
 - ***Normal distribution***
 
- Fungsi/bentuk yang menggambarkan persebaran data bertipe numerik, bentuknya hampir menyerupai sebuah lonceng (simteris). Data yang memiliki distribusi normal cenderung mengelompok di sekitar `mean` (pusat lonceng).
+ Fungsi/bentuk yang menggambarkan persebaran data bertipe numerik/angka, bentuknya hampir menyerupai sebuah lonceng (simteris). Data yang memiliki distribusi normal cenderung mengelompok di sekitar `mean` (pusat lonceng).
  
 - ***Central limit theorem***
 
-  Teorema ini menyatakan bahwa persebaran `sample` dengan distribusi tertentu yang diambil berulang kali dalam jumlah besar cenderung mengikuti distribusi normal.
+  Teorema ini menyatakan bahwa persebaran `sample` dengan distribusi tertentu yang diambil berulang kali dalam jumlah yang besar cenderung mengikuti `normal distribution`.
   
 - ***Discreate variable***
 
@@ -147,11 +147,11 @@ Tipe data ini digunakan untuk menyimpan nilai yang berulang. Contoh: `Perempuan`
 
 - ***Probability mass function***
 
-  Peluang yang digunakan untuk mengambarkan kejadian pada variabel diskrit. Contoh: Dari total 50 siswa hanya 40 siswa yang hadir di kelas, maka peluang kehadiran siswa adalah 40/50 (0.8).
+  Peluang yang digunakan untuk mengambarkan kejadian pada `discreate variable`. Contoh: Dari total 50 siswa hanya 40 siswa yang hadir di kelas, maka peluang kehadiran siswa adalah 40/50 (0.8).
   
 - ***Probability density function***
   
-  Peluang yang digunakan untuk mengambarkan kejadian pada variabel kontinu. Contoh: Peluang bertemu dengan orang yang memiliki tinggi badan minimal 165 cm di Algoritma.
+  Peluang yang digunakan untuk mengambarkan kejadian pada `continous variable`. Contoh: Peluang bertemu dengan orang yang memiliki tinggi badan minimal 165 cm di Algoritma.
   
 - ***Standarization***
 
@@ -163,29 +163,39 @@ Tipe data ini digunakan untuk menyimpan nilai yang berulang. Contoh: `Perempuan`
   
 - ***z-score***
 
-  `standard score` yang dihasilkan dari proses `standarization` dengan memanfaatkan `normal distribution`.
+  `Standard score` yang dihasilkan dari proses `standarization` dengan memanfaatkan `normal distribution`.
 
 - ***Confidence interval***
 
-  Rentang nilai yang dihasilkan dari informasi statistik `sample`. Rentang nilai tersebut kemungkinan mengandung nilai parameter `populai`.  
+  Retang nilai yang kemungkinan mengandung nilai parameter `population`, diperoleh dari informasi statistik `sample`.
 
 - ***Margin of error***
 
-  Nilai yang menyatakan besar kesalahan dari pengambilan `sample`.
+  Nilai yang menggambarkan besar kesalahan dari pengambilan `sample`.
 
 - ***Significance level (alpha)***
 
-  
+  Batas toleransi kesalahan/error yang diperbolehkan pada suatu pengujian.
+
+- ***Hypothesis***
+
+  Dugaan sementara terhadap masalah pada `population` yang harus diuji kebenarannya.
 
 - ***Hypothesis test***
 
-  Pengujian hipotesisyang dilakukan untuk mengambil kesimpulan
+  Suatu metode yang digunakan untuk menarik kesimpulan/mengambil keputusan dari dua pernyataan/`hypothesis` yang saling bertolak belakang.
 
 - ***Null hypothesis***
 
+  Menyatakan bahwa nilai parameter populasi sama dengan nilai yang ditentukan atau tidak memiliki pegaruh yang signifikan. 
+
 - ***Alternative hypothesis***
 
+  Menyatakan bahwa nilai parameter populasi tidak sama dengan nilai yang ditentukan atau memiliki pegaruh yang signifikan.
+
 - ***p-value***
+
+  Nilai/peluang kesalahan yang diperoleh dari hasil perhitungan statistik. 
 
 # Data Visualization
 
