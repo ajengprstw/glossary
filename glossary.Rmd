@@ -51,6 +51,14 @@ Objek di R yang dapat menyimpan elemen yang memiliki tipe data yang berbeda namu
 
 Tipe data ini digunakan untuk menyimpan nilai yang berulang. Contoh: `Perempuan`, `Laki-laki`
 
+- ***Console***
+
+Tempat untuk menjalankan perintah/code.
+
+- ***Chunk***
+
+Tempat untuk menempatkan dan menjalankan code pada rmarkdown.
+
 # Practical Statistics
 
 - ***Population***
@@ -194,9 +202,17 @@ Tipe data ini digunakan untuk menyimpan nilai yang berulang. Contoh: `Perempuan`
 
 - ***UI***
 
-User interface merupakan bentuk tampilan yang berhubungan dengan pengguna.
+User interface merupakan bentuk tampilan atau bagian visual yang berhubungan dengan pengguna.
 
 - ***Server***
+
+Server berisi perintah untuk proses pengambilan data, pembersihan data, dan visualisasi yang akan ditampilkan pada dashboard.
+
+- ***Deploy***
+
+- ***Dashboard***
+
+- ***Interactivity***
 
 
 # Regression Model
