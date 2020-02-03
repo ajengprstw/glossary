@@ -1,0 +1,352 @@
+---
+title: "Glossary"
+author: "Team Algoritma"
+date: "1/21/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Programming for Data Science
+
+- ***Vector***
+
+Objek di R yang dapat menyimpan lebih dari 1 elemen. Vector hanya dapat menyimpan tipe data yang sama. Jika terdapat lebih dari satu tipe data pada satu elemen, maka akan dilakukan `implicit coercion` yaitu konversi ke tipe data yang paling umum.
+
+- ***Character***
+
+Tipe data ini digunakan untuk menyimpan nilai dalam bentuk karakter.
+
+- ***Numeric***
+
+Tipe data ini digunakan untuk menyimpan nilai dalam bentuk angka.
+
+- ***Integer***
+
+Tipe data ini digunakan untuk menyimpan nilai angka pada bilangan bulat.
+
+- ***Complex***
+
+Tipe data ini digunakan untuk menyimpan gabungan nilai numerik dan imajiner. Contoh: `1+3i`.
+
+- ***Logical***
+
+Tipe data logika yang hanya bernilai `TRUE` dan `FALSE`. 
+
+- ***Matrix***
+
+Objek di R yang dapat menyimpan elemen dalam dua dimensi. Matriks merupakan objek yang menyimpan tipe data yang sama dan disusun secara baris dan kolom.
+
+- ***List***
+
+Objek di R yang dapat menyimpan elemen yang memiliki tipe data dan jumlah elemen yang berbeda.
+
+- ***Data Frame***
+
+Objek di R yang dapat menyimpan elemen yang memiliki tipe data yang berbeda namum memiliki jumlah elemen yang sama.
+
+- ***Factor***
+
+Tipe data ini digunakan untuk menyimpan nilai yang berulang. Contoh: `Perempuan`, `Laki-laki`
+
+# Practical Statistics
+
+- ***Population***
+
+  Keseluruhan data.
+  
+- ***Sample***
+
+  Bagian kecil/subset dari keseluruhan data (`population`).
+  
+- ***Descriptive statistics***
+
+  Suatu nilai yag merangkum data, tujuannya untuk menggambarkan keadaa data secara umum.
+  
+- ***Measures of centaral tendency***
+
+  Ukuran pemusatan data, menjelaskan titik sentral/pusat data.
+  
+- ***Mean***
+
+ Nilai rata-rata (total seluruh data dibagi dengan banyaknya data), digunakan untuk menjelaskan pusat data yang bertipe numerik/angka. Nilai rata-rata suatu `population` dinotasikan oleh $\mu$, sedangkan nilai rata-rata suatu `sample` dinotasikan oleh $\bar{x}$.
+
+- ***Quartil***
+
+  Nilai yang membagi data terurut menjadi 4 bagian sama besar (---Q1---Q2---Q3---), digunakan untuk menjelaskan data yang bertipe numrik/angka. 
+
+- ***Median***
+
+  Nilai yang membagi data terurut menjadi 2 bagian sama besar, digunakan untuk menjelaskan pusat data yang bertipe numerik/angka dan sering disebut sebagai `Q2`.  
+
+- ***Outlier***
+  
+  Data yang nilainya sangat ekstrim, sering disebut sebagai data yang anomali.
+
+- ***Trimmed mean***
+
+  Nilai rata-rata yang diperoleh dari data terurut, yang sudah tidak terdapat `outlier` (`outlier` sudah dibuang/data sudah dipotog), digunakan untuk menjelaskan pusat data yang bertipe numerik/angka.
+
+- ***Mode***
+
+  Nilai yang paling sering muncul, digunakan untuk mejelaskan pusat data yang bertipe kategorik.
+  
+- ***Measures of spread***
+
+  Ukuran penyebaran data, menjelaskan bagaimana persebaran suatu data.
+  
+- ***Variance***
+
+  Nilai yang menggamabarkan seberapa bervariasi/beragamnya suatu data, digunakan untuk menjelaskan sebaran data yang bertipe numerik. Semakin besar nilai `variance` maka semakin beragam suatu data (heterogen), sedangkan semakin kecil nilai `vaiance` maka semakin sama/mirip setiap observasi pada data (homogen). Data yang observasinya bernilai sama, maka `variance` sama dengan 0.
+
+- ***Standard deviation***
+
+  Nilai rata-rata selisih/jarak setiap observasi dengan nilai `mean`, digunakan untuk menjelaskan sebaran data yang bertipe numerik. Diperoleh dari akar kuadrat `variance`.
+  
+- ***Range***
+
+  Nilai selisih/jarak dari observasi yang nilainya paling kecil (minimum) dengan observasi yang nilainya paling besar (maksimum), digunakan untuk menjelaskan sebaran data yang bertipe numerik.
+  
+- ***IQR***
+
+  Nilai selisih/jarak antara `Q1` dan `Q3`, digunakan untuk menjelaskan sebaran data yang bertipe numerik.
+  
+- ***Standard error***
+
+  Nilai yang menggambarkan kedekatan `mean sample` dengan `mean populasi`. Semakin kecil nilai `standard error` maka semakin dekat/representatif pula `mean sample` menggambarkan `mean populasi`, dan sebaliknya.
+  
+- ***Covariance***
+
+  Nilai yang menggambarkan hubungan (positif/negatif/tidak ada hubungan) antara dua variabel numerik. Namun `covariance` tidak dapat menggambarkan seberapa erat/kuat hubungan tersebut karena nilai `covariance` tidak memilki batasan yang mutlak (- inf, + inf).
+
+- ***Correlation***  
+  
+  Nilai yang menggambarkan keeratan hubungan (positif/negatif/tidak ada hubungan) antara dua variabel numerik. Nilai `correlation` mendekati 1 artinya kedua variabel berhubungan erat dan positif, nilai `correlation` mendekati -1 artinya kedua variabel berhubungan erat dan negatif, nilai `correlation` mendekati 0 artinya kedua variabel tidak berhubungan.
+
+- ***Data distribution***
+
+  Fungsi/bentuk yang menggambarkan persebaran data, sering disebut sebagai kumpulan nilai yang mungkin terjadi.
+  
+- ***Normal distribution***
+
+ Fungsi/bentuk yang menggambarkan persebaran data bertipe numerik, bentuknya hampir menyerupai sebuah lonceng (simteris). Data yang memiliki distribusi normal cenderung mengelompok di sekitar `mean` (pusat lonceng).
+ 
+- ***Central limit theorem***
+
+  Teorema ini menyatakan bahwa persebaran `sample` dengan distribusi tertentu yang diambil berulang kali dalam jumlah besar cenderung mengikuti distribusi normal.
+  
+- ***Discreate variable***
+
+  Variabel yang berisi data bertipe numerik/angka bulat (dapat dicacah), contoh: jumlah siswa dalam satu kelas. 
+
+- ***Continous variable***
+
+  Variabel yang berisi data bertipe numerik/angka desimal, contoh: tinggi badan.
+
+- ***Probability mass function***
+
+  Peluang yang digunakan untuk mengambarkan kejadian pada variabel diskrit. Contoh: Dari total 50 siswa hanya 40 siswa yang hadir di kelas, maka peluang kehadiran siswa adalah 40/50 (0.8).
+  
+- ***Probability density function***
+  
+  Peluang yang digunakan untuk mengambarkan kejadian pada variabel kontinu. Contoh: Peluang bertemu dengan orang yang memiliki tinggi badan minimal 165 cm di Algoritma.
+  
+- ***Standarization***
+
+  Proses untuk menyeragamkan skala data yang berbeda.
+  
+- ***Standard scores***
+
+  Nilai yang dihasilkan dari proses `Standarization`.  
+  
+- ***z-score***
+
+  `standard score` yang dihasilkan dari proses `standarization` dengan memanfaatkan `normal distribution`.
+
+- ***Confidence interval***
+
+  Rentang nilai yang dihasilkan dari informasi statistik `sample`. Rentang nilai tersebut kemungkinan mengandung nilai parameter `populai`.  
+
+- ***Margin of error***
+
+  Nilai yang menyatakan besar kesalahan dari pengambilan `sample`.
+
+- ***Significance level (alpha)***
+
+  
+
+- ***Hypothesis test***
+
+  Pengujian hipotesisyang dilakukan untuk mengambil kesimpulan
+
+- ***Null hypothesis***
+
+- ***Alternative hypothesis***
+
+- ***p-value***
+
+# Data Visualization
+
+
+# Interactive Plotting
+
+- ***UI***
+
+User interface merupakan bentuk tampilan yang berhubungan dengan pengguna.
+
+- ***Server***
+
+
+# Regression Model
+
+- ***Observasi***
+
+Data yang dikumpulkan sebagai informasi, secara umum mengacu pada 1 baris data yang terdiri dari beberapa variabel.
+
+- ***Variabel Target***
+
+Variabel yang ingin diprediksi/dimodelkan
+
+- ***Variabel Prediktor***
+
+Variabel yang digunakan untuk menebak variabel target
+
+- ***Residual/Error***
+
+Selisih perbedaan antara nilai yang diprediksi dan nilai sebenarnya
+
+- ***R Squared***
+
+Persentase variansi target variabel yang dapat dijelaskan oleh model. Ukuran yang bisa digunakan untuk mengukur `kebaikan model`
+
+- ***Mean Squared Error***
+
+Rata-rata dari kuadrat error. Ukuran yang bisa digunakan untuk mengukur `kebaikan model`
+
+- ***Variabel Dummy***
+
+Variabel dummy adalah variabel yang hanya mengambil nilai 0 atau 1 pada data kategorik. Variabel ini digunakan untuk membuat data kategori yang bersifat kualitatif menjadi kuantitatif.
+
+- ***Akaike Information Criterion(AIC)***
+
+Ukuran nilai yang menjelaskan seberapa banyak informasi yang hilang pada model.
+
+- ***Ordinary Least Square***
+
+Memperkirakan parameter model regresi dengan meminimumkan nilai Sum Squared Error (SSE)
+
+- ***Homoscedasticity***
+
+Residual yang dihasilkan bernilai konstan dan tidak membentuk pola apapun.
+
+- ***Multicolinearity***
+
+Keadaan dimana terdapat hubungan korelasi yang tinggi antar variabel independen pada model regresi.
+
+
+# Classification 1
+
+- ***Odds***
+
+Ukuran yang dapat menjelaskan probability. Dimana odds bisa di dapatkan dari p/(1-p) dimana p adalah peluang suatu kejadian terjadi.
+
+- ***Sigmoid Function***
+
+Sigmoid function digunakan untuk memetakan hasil nilai prediksi ke nilai peluang yaitu antara 0 hingga 1.
+
+- ***Class Imbalance***
+
+Keadaan dimana jumlah observasi antar kelas tidak seimbang.
+
+- ***Overfitting***
+
+Keadaan dimana model yang dibuat hanya dapat memprediksi dengan baik data pelatihan. Namun ketika diberikan `unseen data`, model tersebut tidak dapat memprediksi dengan baik.
+
+# Classification 2
+
+# Time Series
+
+- ***Autocorrelation***
+
+Hubungan korelasi antara data time series dengan periode waktu yang berbeda.
+
+- ***Autoregressive model (AR)***
+
+Autoregressive ini mirip dengan regresi linear, hanya saja dia melakukan regresi terhadap dirinya sendiri.
+
+- ***Integrated(I)***
+Menjelaskan mengenai berapa kali model melakukan differencing.
+
+- ***Moving Average MA***
+
+Moving Average digunakan untuk smoothing error.
+
+- ***Random Walk***
+
+Random walk adalah bentuk data time series yang tidak stasioner. 
+
+- ***Trend***
+
+Data trend merupakan keadaan ketika observasi cenderung naik atau menurun pada suatu periode waktu.
+
+- ***Seasonal***
+
+Seasonal effects terjadi jika data observasi memiliki pola yang berulang sesuai dengan siklus tertentu.
+
+- ***Stationary patern***
+
+Keadaan dimana data observasi berada di sekitar rata-rata.
+
+# Unsupervised Learning
+
+- **Principal Component**
+
+  Dimensi/variabel baru yang berisi rangkuman informasi dari keseluruhan variabel awal (data awal).
+  
+- ***Principal Components Analysis*** 
+
+  Proses untuk membuat `principal comonent`.
+
+- ***Eigen values***
+
+  Nilai yang merepresentasikan jumlah/besar informasi (variansi) yang dimiliki oleh setiap PC
+  
+- ***Eigen vector***
+
+  Kumpulan nilai yang memproyeksikan data awal ke setiap `principal component`
+  
+- ***Biplot***
+
+  Plot yang menggambarkan posisi data berdasarkan hasil `principal component analysis` dan besarnya pengaruh setiap variabel ke `principal component` 1 dan `principal component` 2.
+  
+- ***Reconstruct***
+
+  Proses transformasi hasil `principal component analysis` ke data awal.
+
+- ***Clustering***
+
+  Proses mengelompokkan data berdasarkan jarak terdekat (kemiripan).
+  
+- ***Centroid***
+  
+  Pusat cluster.
+  
+- ***Between sum of square***
+
+  Jarak tiap pusat cluster (`centroid`) ke pusat data secara keseluruhan.
+
+- ***Within sum of square***
+
+  Jarak tiap observasi ke `centroid` (pusat cluster) tiap cluster.
+  
+- ***Total sum of square***
+
+  Jumlah nilai `Between sum of square` dan nilai `Within sum of square`
+
+- ***Elbow method***
+
+  Salah satu metode yang digunakan untuk menentukan jumlah cluster yang optimum.
+
+# Neural Network
