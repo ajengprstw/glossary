@@ -298,7 +298,10 @@ Tempat untuk menempatkan dan menjalankan code pada rmarkdown.
 - ***Faceting***
 
   Membuat jenis `plot` yang sama menjadi beberapa bagian berdasarkan variabel tertentu.
+<<<<<<< HEAD
 
+=======
+>>>>>>> a9482029a3541c80db542b06d0ea32c1616cb5d1
 
 # Interactive Plotting
 
@@ -435,8 +438,11 @@ Keadaan dimana model yang dibuat hanya dapat memprediksi dengan baik data pelati
 
   Salah satu metode yang digunakan untuk menentukan jumlah cluster yang optimum.
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> a9482029a3541c80db542b06d0ea32c1616cb5d1
 # Time Series
 
 - ***Autocorrelation***
@@ -545,11 +551,23 @@ Keadaan dimana data observasi berada di sekitar rata-rata.
   Hasil transformasi varibel bertipe kategorik.
 
 - ***Learning rate***
+<<<<<<< HEAD
 
   Besar nilai yang menentukan seberapa besar `gardient` yang digunakan untuk melakukan update `weight`.
 
 - ***Batch size***
 
   Jumlah observasi yang dikutertakan untuk satu iterasi.
+=======
+
+  Besar nilai yang menentukan seberapa besar `gardient` yang digunakan untuk melakukan update `weight`.
+
+- ***Batch size***
+
+  Jumlah observasi yang dikutertakan untuk satu iterasi.
+
+
+
+>>>>>>> a9482029a3541c80db542b06d0ea32c1616cb5d1
 
 
