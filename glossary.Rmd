@@ -11,54 +11,66 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Programming for Data Science
 
+- ***Implicit coercion***
+
+  Konversi ke tipe data yang paling umum.
+
 - ***Vector***
 
-Objek di R yang dapat menyimpan lebih dari 1 elemen. Vector hanya dapat menyimpan tipe data yang sama. Jika terdapat lebih dari satu tipe data pada satu elemen, maka akan dilakukan `implicit coercion` yaitu konversi ke tipe data yang paling umum.
+Suatu objek di R yang dapat menyimpan lebih dari 1 elemen. `Vector` hanya dapat menyimpan tipe data yang sama. Jika terdapat lebih dari satu tipe data pada satu elemen, maka akan dilakukan `implicit coercion`.
 
 - ***Character***
 
-Tipe data ini digunakan untuk menyimpan nilai dalam bentuk karakter.
+Tipe data ini digunakan untuk menyimpan nilai dalam bentuk karakter, sering disebut sebagai `string`.
 
 - ***Numeric***
 
-Tipe data ini digunakan untuk menyimpan nilai dalam bentuk angka.
+Tipe data ini digunakan untuk menyimpan nilai dalam bentuk angka (bilangan desimal).
 
 - ***Integer***
 
-Tipe data ini digunakan untuk menyimpan nilai angka pada bilangan bulat.
+Tipe data ini digunakan untuk menyimpan nilai dalam bentuk angka (bilangan bulat).
 
 - ***Complex***
 
-Tipe data ini digunakan untuk menyimpan gabungan nilai numerik dan imajiner. Contoh: `1+3i`.
+Tipe data ini digunakan untuk menyimpan gabungan nilai `numeric` dan imajiner. Contoh: `1+3i`.
 
 - ***Logical***
 
-Tipe data logika yang hanya bernilai `TRUE` dan `FALSE`. 
+Tipe data ini digunakan untuk menyimpan nilai logika (`TRUE` dan `FALSE`). 
 
 - ***Matrix***
 
-Objek di R yang dapat menyimpan elemen dalam dua dimensi. Matriks merupakan objek yang menyimpan tipe data yang sama dan disusun secara baris dan kolom.
+Objek di R yang dapat menyimpan elemen dalam dua dimensi. `Matrix` hanya dapat menyimpan nilai dengan tipe data yang sama, kemudian disusun secara baris dan kolom.
 
 - ***List***
 
 Objek di R yang dapat menyimpan elemen yang memiliki tipe data dan jumlah elemen yang berbeda.
 
-- ***Data Frame***
+- ***Data frame***
 
 Objek di R yang dapat menyimpan elemen yang memiliki tipe data yang berbeda namum memiliki jumlah elemen yang sama.
 
 - ***Factor***
 
-Tipe data ini digunakan untuk menyimpan nilai yang berulang. Contoh: `Perempuan`, `Laki-laki`
+Tipe data ini digunakan untuk menyimpan nilai yang berulang (nilai dengan tipe data kategorik). Contoh: `Gender` terdiri dari `Laki-laki` dan `Perempuan`.
 
 - ***Console***
 
 Tempat untuk menjalankan perintah/code.
 
+- ***R Markdown***
+
+  Tipe file pada R.
+
 - ***Chunk***
 
-Tempat untuk menempatkan dan menjalankan code pada rmarkdown.
+Tempat untuk menempatkan dan menjalankan code pada `R Markdown`.
 
+- ***Package***
+
+  Kumpulan fungsi, sering disebut sebagai `library`.
+  
 # Practical Statistics
 
 - ***Population***
@@ -72,6 +84,8 @@ Tempat untuk menempatkan dan menjalankan code pada rmarkdown.
 - ***Descriptive statistics***
 
   Suatu nilai yag merangkum data, tujuannya untuk menggambarkan keadaan data secara umum.
+  
+- ***Inferential Statistics***
   
 - ***Measures of centaral tendency***
 
@@ -99,7 +113,7 @@ Tempat untuk menempatkan dan menjalankan code pada rmarkdown.
 
 - ***Mode***
 
-  Nilai yang paling sering muncul/keluar dari data bertipe kategorik .
+  Nilai yang paling sering muncul/keluar dari data.
   
 - ***Measures of spread***
 
@@ -107,7 +121,7 @@ Tempat untuk menempatkan dan menjalankan code pada rmarkdown.
   
 - ***Variance***
 
-  Nilai yang menggamabarkan seberapa bervariasi/beragamnya suatu data bertipe numerik/angka. Semakin besar nilai `variance` maka semakin beragam suatu data (heterogen), sedangkan semakin kecil nilai `vaiance` maka semakin sama/mirip setiap observasi pada data (homogen). Data yang observasinya bernilai sama, maka `variance` sama dengan 0.
+  Nilai yang menggamabarkan seberapa bervariasi/beragamnya suatu data bertipe numerik/angka. Semakin besar nilai `variance` maka semakin beragam suatu data (heterogen), sedangkan semakin kecil nilai `variance` maka semakin sama/mirip setiap observasi pada data (homogen). Data yang observasinya bernilai sama, maka `variance` sama dengan 0.
 
 - ***Standard deviation***
 
@@ -115,7 +129,7 @@ Tempat untuk menempatkan dan menjalankan code pada rmarkdown.
   
 - ***Range***
 
-  Selisih/jarak anatara observasi yang nilainya paling kecil (minimum) dengan yang nilainya paling besar (maksimum).
+  Selisih/jarak antara observasi yang nilainya paling kecil (minimum) dengan yang nilainya paling besar (maksimum).
   
 - ***IQR***
 
@@ -139,7 +153,7 @@ Tempat untuk menempatkan dan menjalankan code pada rmarkdown.
   
 - ***Normal distribution***
 
- Fungsi/bentuk yang menggambarkan persebaran data bertipe numerik/angka, bentuknya hampir menyerupai sebuah lonceng (simteris). Data yang memiliki distribusi normal cenderung mengelompok di sekitar `mean` (pusat lonceng).
+ Fungsi/bentuk yang menggambarkan persebaran data bertipe numerik/angka, bentuknya hampir menyerupai sebuah lonceng (simetris). Data yang memiliki distribusi normal cenderung mengelompok di sekitar `mean` (pusat lonceng).
  
 - ***Central limit theorem***
 
@@ -147,7 +161,7 @@ Tempat untuk menempatkan dan menjalankan code pada rmarkdown.
   
 - ***Discreate variable***
 
-  Variabel yang berisi data bertipe numerik/angka bulat (dapat dicacah), contoh: jumlah siswa dalam satu kelas. 
+  Variabel yang berisi data bertipe numerik/angka bulat, contoh: jumlah siswa dalam satu kelas. 
 
 - ***Continous variable***
 
@@ -175,7 +189,7 @@ Tempat untuk menempatkan dan menjalankan code pada rmarkdown.
 
 - ***Confidence interval***
 
-  Retang nilai yang kemungkinan mengandung nilai parameter `population`, diperoleh dari informasi statistik `sample`.
+  Rentang nilai yang kemungkinan mengandung nilai parameter `population`, diperoleh dari informasi statistik `sample`.
 
 - ***Margin of error***
 
@@ -195,11 +209,11 @@ Tempat untuk menempatkan dan menjalankan code pada rmarkdown.
 
 - ***Null hypothesis***
 
-  Menyatakan bahwa nilai parameter populasi sama dengan nilai yang ditentukan atau tidak memiliki pegaruh yang signifikan. 
+  Menyatakan bahwa nilai parameter populasi sama dengan nilai yang ditentukan atau tidak memiliki pengaruh yang signifikan. 
 
 - ***Alternative hypothesis***
 
-  Menyatakan bahwa nilai parameter populasi tidak sama dengan nilai yang ditentukan atau memiliki pegaruh yang signifikan.
+  Menyatakan bahwa nilai parameter populasi tidak sama dengan nilai yang ditentukan atau memiliki pengaruh yang signifikan.
 
 - ***p-value***
 
@@ -229,7 +243,7 @@ Tempat untuk menempatkan dan menjalankan code pada rmarkdown.
 
 - ***Box plot***
 
-  `Plot` yang digunakan untuk menggambarakan persebaran data yang bertipe numerik/angka.
+  `Plot` yang digunakan untuk menggambrakan persebaran data yang bertipe numerik/angka.
 
 - ***Scatter plot***
 
@@ -241,7 +255,7 @@ Tempat untuk menempatkan dan menjalankan code pada rmarkdown.
 
 - ***Histogram***
 
-  `Plot` yang digunakan untuk menggambarkan persebaran  data yang bertipe numerik/angka.
+  `Plot` yang digunakan untuk menggambarkan persebaran data yang bertipe numerik/angka.
 
 - ***Bins***
 
@@ -249,7 +263,7 @@ Tempat untuk menempatkan dan menjalankan code pada rmarkdown.
 
 - ***Density Plot***
 
-  `Plot` yang digunakan untuk menggambarkan persebaran  data yang bertipe numerik/angka.
+  `Plot` yang digunakan untuk menggambarkan persebaran data yang bertipe numerik/angka.
 
 - ***Line chart***
 
@@ -263,10 +277,6 @@ Tempat untuk menempatkan dan menjalankan code pada rmarkdown.
 
   `Plot` yang digunakan untuk menggambarkan jumlah/frekusensi data yang bertipe kategorik.
 
-- ***Package***
-
-  Kumpulan fungsi, sering disebut sebagai `library`.
-
 - ***ggplot2***
 
   Kumpulan fungsi yang digunakan untuk membuat visualisasi.
@@ -277,15 +287,15 @@ Tempat untuk menempatkan dan menjalankan code pada rmarkdown.
 
 - ***Axis***
 
-  Sumbu pada `plot`, terbagi menjadi sumbu horizontal (x) dan sumbu vertikal (y).
+  Sumbu pada `plot`, terbagi menjadi sumbu horizontal(x) dan sumbu vertikal(y).
  
 - ***Aesthetic***
 
-  "Sesuatu yang dapat dilihat" (`axis`, warna, ukuran, bentuk, dll).
+  "Sesuatu yang dapat ditampilkan" (`axis`, warna, ukuran, bentuk, dll).
 
 - ***Layer***
 
-  Pada `ggplot2` dalam membuat `plot` menggunakan konsep lukisan, dimana plot dibuat dengan cara `layer-by-layer` (lapis per lapis). 
+  Pada `ggplot2` dalam membuat `plot` menggunakan konsep lukisan, dimana plot dibuat dengan cara `layer-by-layer`. 
 
 - ***Geometry***
 
@@ -299,73 +309,87 @@ Tempat untuk menempatkan dan menjalankan code pada rmarkdown.
 
   Membuat jenis `plot` yang sama menjadi beberapa bagian berdasarkan variabel tertentu.
 
+- ***Leaflet***
+
 # Interactive Plotting and Web Dashboard
 
-- ***UI***
+- ***User Interface (UI)***
 
-User interface merupakan bentuk tampilan atau bagian visual yang berhubungan dengan pengguna.
+User interface merupakan tampilan atau bagian visual yang dapat dilihat oleh user/pengguna.
 
 - ***Server***
 
-Server berisi perintah untuk proses pengambilan data, pembersihan data, dan visualisasi yang akan ditampilkan pada dashboard.
+Server berisi perintah untuk proses `aggregation` dan membuat visualisasi yang akan ditampilkan pada dashboard.
+
+- ***Dashboard***
+
+
 
 - ***Deployment***
 
-Deployment merupakan kegiatan yang bertujuan untuk menyebarkan suatu web/aplikasi yang dapat beroperasi dan diakses oleh khalayak umum.
+Deployment merupakan suatu proses yang bertujuan untuk mendistribusikan suatu `dashboard` yang dapat beroperasi dan diakses secara publik.
 
 - ***Interactive plotting***
 
-Interactive plotting merupakan upaya meningkatkan cara untuk berinteraksi dengan informasi yang terdapat pada plot yang tersedia.
+Interactive plotting merupakan upaya meningkatkan informasi yang terdapat pada sebuah visualisasi (`plot`).
 
 # Regression Model
 
-- ***Observasi***
+- ***Observation***
 
 Data yang dikumpulkan sebagai informasi, secara umum mengacu pada 1 baris data yang terdiri dari beberapa variabel.
 
-- ***Variabel Target***
+- ***Target variable ***
 
-Variabel yang ingin diprediksi/dimodelkan.
+Variabel yang ingin diprediksi/dimodelkan, sering disebut sebagai `respon/dependen variable`.
 
-- ***Variabel Prediktor***
+- ***Predictor***
 
-Variabel yang digunakan untuk menebak variabel target.
+Variabel yang digunakan untuk memprediksi `target variable`, sering disebut sebagi `independen variable`.
 
-- ***Variabel Dummy***
+- ***Dummy variable***
 
-Variabel dummy adalah variabel yang hanya mengambil nilai 0 atau 1 pada data kategorik. Variabel ini digunakan untuk membuat data kategori yang bersifat kualitatif menjadi kuantitatif.
-
-- ***Ordinary Least Square***
-
-Memperkirakan parameter model regresi dengan meminimumkan nilai Sum Squared Error (SSE).
+`Dummy Variable` adalah hasil transformasi variabel kategorik dengan nilai 0 atau 1. Variabel ini digunakan untuk membuat data kategorik yang bersifat kualitatif menjadi kuantitatif.
 
 - ***Residual/Error***
 
-Selisih perbedaan antara nilai yang diprediksi dan nilai sebenarnya.
+Selisih antara nilai yang diprediksi dan nilai sebenarnya.
+
+- ***Ordinary least square***
+
+Memperkirakan parameter model regresi dengan meminimumkan nilai Sum Squared Error (SSE).
+
+- ***Intercept***
+
+  Titik perpotongan antara sumbu y dengan garis regresi.
+  
+- ***Slope***
+
+  Kemiringan garis regresi.
 
 - ***R Squared***
 
-Persentase variansi target variabel yang dapat dijelaskan oleh model. Ukuran yang bisa digunakan untuk mengukur `kebaikan model`.
+Persentase variansi target variabel yang dapat dijelaskan oleh model (`predictor`). Ukuran yang bisa digunakan untuk mengukur `kebaikan model`.
 
 - ***Adjusted R Squared***
 
-Tidak jauh berbeda dengan R Squared, yaitu persentase variansi target variabel yang dijelaskan oleh model, perbedaannya adalah Adjusted R squared memmperhitungkan banyak observasi dan prediktor yang digunakan.
+Persentase variansi target variabel yang dijelaskan oleh model, perbedaannya dengan `R Squared` adalah `Adjusted R squared` memmperhitungkan banyak observasi dan signifikansi prediktor yang digunakan.
 
-- ***Akaike Information Criterion(AIC)***
+- ***Akaike Information Criterion (AIC)***
 
-Ukuran nilai yang menjelaskan seberapa banyak informasi yang hilang pada model.
+Nilai yang menjelaskan besar informasi yang hilang pada model.
 
-- ***Feature Selection***
+- ***Feature selection***
 
 Feature selection merupakan tahapan dalam memilih variabel yang akan digunakan.
 
 - ***Stepwise***
 
-Stepwise adalah algoritma yang bertahap menambahkan atau mengurangkan variabel dengan mengacu pada nilai AIC terkecil.
+Stepwise adalah algoritma yang secara bertahap menambahkan atau mengurangkan variabel dengan mengacu pada nilai `AIC` terkecil.
 
-- ***Mean Squared Error***
+- ***Mean squared error***
 
-Rata-rata dari kuadrat error. Ukuran yang bisa digunakan untuk mengukur `kebaikan model`.
+Rata-rata dari `error` kuadrat. Ukuran yang bisa digunakan untuk mengukur `kebaikan model`.
 
 - ***Homoscedasticity***
 
@@ -373,54 +397,137 @@ Residual yang dihasilkan bernilai konstan dan tidak membentuk pola apapun.
 
 - ***Multicolinearity***
 
-Keadaan dimana terdapat hubungan korelasi yang tinggi antar variabel independen pada model regresi.
+Keadaan dimana terdapat hubungan/`correlation` yang tinggi antar `predictor` pada model regresi.
 
 
 # Classification 1
 
-- ***Klasifikasi***
 
-Klasifikasi adalah metode machine learning yang digunakan untuk memprediksi target dengan nilai kategorik.
+- ***Classification***
+
+`Classification` adalah metode yang digunakan untuk memprediksi `target variable` bertipe kategorik (`factor`).
+
+- ***Probability***
+
+  Kemungkinan terjadinya suatu kejadian.
 
 - ***Odds***
 
-Ukuran yang dapat menjelaskan probability. Dimana odds bisa di dapatkan dari p/(1-p) dimana p adalah peluang suatu kejadian terjadi.
+Ukuran yang dapat menjelaskan probability. Dimana odds bisa di dapatkan dari `p/(1-p)` dimana `p` adalah peluang suatu kejadian terjadi.
 
-- ***Odds Ratio***
+- ***Odds ratio***
 
-Odds Ratio adalah perbandingan antara dua odds
+Odds Ratio adalah perbandingan antara dua `odds`.
 
-- ***Sigmoid Function***
+- ***Sigmoid function***
 
-Sigmoid function digunakan untuk memetakan hasil nilai prediksi ke nilai peluang yaitu antara 0 hingga 1.
+`Sigmoid function` merupakan fungsi yang digunakan untuk mentransformasi nilai prediksi ke nilai peluang yaitu antara 0 hingga 1.
 
-- ***Class Imbalance***
+- ***Class imbalance***
 
 Keadaan dimana jumlah observasi antar kelas tidak seimbang.
 
+- ***Data train***
+
+- ***Data test***
+
 - ***Overfitting***
 
-Keadaan dimana model yang dibuat hanya dapat memprediksi dengan baik data pelatihan. Namun ketika diberikan `unseen data`, model tersebut tidak dapat memprediksi dengan baik.
+Keadaan dimana model yang dibuat hanya dapat memprediksi dengan baik `data train`. Namun, ketika melakukan prediksi pada `data test`, model tersebut tidak dapat memprediksi dengan baik.
 
 - ***Independence of observations***
 
 Antar observasi independen satu sama lain.
 
-- ***Null Deviance***
+- ***Null deviance***
 
-Null deviance menunjukkan seberapa baik target variabel diprediksi oleh model berdasarkan nilai intercept.
+`Null deviance` menunjukkan seberapa baik `target variable` diprediksi oleh model berdasarkan nilai `intercept`.
 
-- ***Residual Deviance***
+- ***Residual deviance***
 
-Residual deviance menunjukkan seberapa baik target variabel diprediksi oleh model berdasarkan intercept dan semua variabel independen yang digunakan.
+`Residual deviance` menunjukkan seberapa baik `target variable` diprediksi oleh model berdasarkan `intercept` dan semua `predictor` yang digunakan.
 
-- ***Maximum Likelihood Estimator***
+- ***Maximum likelihood estimator***
 
-Maximum Likelihood Estimator merupakan pendekatan statistik untuk memperkirakan paramater pada model.
-
-
+`Maximum likelihood estimator` merupakan pendekatan statistik untuk memperkirakan paramater pada model `logistic regression`.
 
 # Classification 2
+
+- ***Independent Events***
+
+  Kejadian yang masing-masing tidak saling berkaitan satu sama lain.
+
+- ***Dependent Events***
+ 
+  Kejadian yang masing-masing saling berkaitan satu sama lain (kemungkinan terjadinya suatu kejadian akan memepengaruhi kemungkinan terjadinya kejadian lain. 
+
+- ***Laplace estimator***
+
+  Menambahkan nilai pada setiap prediktor, biasanya adalah 1 pada masing-masing jumlah kejadian.
+
+- ***Text mining***
+
+  Analisis yang dilakukan dengan memanfaatkan teks sebagai predictor.
+
+- ***Corpus***
+ 
+  Objek yang digunakan pada `text mining`, berisi kumpulan teks yang disebut sebagai dokumen.
+  
+- ***Punctuation***
+
+  Tanda baca pada teks.
+
+- ***Stopwords***
+
+  Kumpulan kata yang tidak memiliki makna jika diikutsertakan dalam pemodelan klasifikasi.
+
+- ***Stemming***
+
+  Proses untuk mengambil kata dasar dari sebuah kata berimbuhan.
+  
+- ***DocumentTermMatrix***
+
+  Proses untuk membagi setiap konten teks menjadi kata-kata yang mewakili `predictor`.
+
+- ***ROC (Receiver Operating Characteristic)***
+
+  Kurva yang menggambarkan performa model klasifikasi untuk seluruh `threshold`.
+
+- ***AUC***
+ 
+  Luas area di bawah kurva `ROC`, menggambarkan keberhasilan model klasifikasi dalam memprediksi/membedakan kedua kelas dari `target variable`.
+ 
+- ***Entropy***
+
+  Derajat kehomogenan.
+
+- ***Information gain***
+
+  Penurunan `entropy` setelah terjadi pembagian/spliting data.
+
+- ***Pruning***
+
+  Membatasi pembentukan cabang pada pohon (menyederhanakan pohon yang dibentuk).
+
+- ***Terminal node***
+
+  Bagian data yang sudah tidak dapat terbagi lagi.
+
+- ***K-fold cross validation***
+ 
+  Membagi data sebanyak k bagian, setiap bagian akan digunakan menjadi train dan test secara bergantian.
+  
+- ***Ensamble method***
+
+  Kumpulan beberapa algoritma prediktif untuk memperoleh performa yang lebih baik.
+
+- ***OOB (Out of Bag)***
+
+  Besar error dari hasil prediksi pada data aktual yang belum dilihat oleh model.
+
+- ***Variable importance***
+
+  `Predictor` yang dianggap penting dalam model.
 
 # Unsupervised Learning
 
@@ -434,7 +541,7 @@ Maximum Likelihood Estimator merupakan pendekatan statistik untuk memperkirakan 
 
 - ***Eigen values***
 
-  Nilai yang merepresentasikan jumlah/besar informasi (variansi) yang dimiliki oleh setiap PC
+  Nilai yang merepresentasikan jumlah/besar informasi (variansi) yang dimiliki oleh setiap PC.
   
 - ***Eigen vector***
 
@@ -476,34 +583,35 @@ Maximum Likelihood Estimator merupakan pendekatan statistik untuk memperkirakan 
 
 - ***Autocorrelation***
 
-Hubungan korelasi antara data time series dengan periode waktu yang berbeda.
+`Correlation` antar data `observation` pada periode waktu yang berbeda.
+
+- ***Smoothing***
+
+- ***Differencing***
 
 - ***Autoregressive model (AR)***
 
-Autoregressive ini mirip dengan regresi linear, hanya saja dia melakukan regresi terhadap dirinya sendiri.
+`Autoregressive model` hampir sama dengan model `linear regression`, namun `predictor` yang digunakan adalah nilai `target variable` itu sendiri pada masa lampau.
 
-- ***Integrated(I)***
-Menjelaskan mengenai berapa kali model melakukan differencing.
+- ***Integrated (I)***
 
-- ***Moving Average MA***
+Menjelaskan mengenai berapa kali model melakukan `differencing`.
 
-Moving Average digunakan untuk smoothing error.
+- ***Moving average (MA)***
 
-- ***Random Walk***
-
-Random walk adalah bentuk data time series yang tidak stasioner. 
+`Moving average` digunakan untuk melakukan `smoothing` terhadap `error.`
 
 - ***Trend***
 
-Data trend merupakan keadaan ketika observasi cenderung naik atau menurun pada suatu periode waktu.
+Data `trend` merupakan keadaan ketika observasi cenderung naik atau turun pada suatu periode waktu.
 
 - ***Seasonal***
 
-Seasonal effects terjadi jika data observasi memiliki pola yang berulang sesuai dengan siklus tertentu.
+Efek `Seasonal` terjadi jika data time series memiliki pola berulang pada siklus tertentu.
 
 - ***Stationary patern***
 
-Keadaan dimana data observasi berada di sekitar rata-rata.
+Keadaan dimana data time series berada di sekitar rata-rata.
 
 # Neural Network
 
@@ -513,7 +621,7 @@ Keadaan dimana data observasi berada di sekitar rata-rata.
 
 - ***Predictor***
 
-  Variabel yang digunakan untuk menentukan/mempediksi `target variable`.
+  Variabel yang digunakan untuk menentukan/memprediksi `target variable`.
 
 - ***Target variable***
 
@@ -543,13 +651,9 @@ Keadaan dimana data observasi berada di sekitar rata-rata.
 
   Suatu metode yang digunakan untuk memprediksi `target variable` bertipe numerik/angka.
 
-- ***Intersep***
-
-  Titik perpotongan `regression line` dengan sumbu vertikal (y). 
-
 - ***Bias*** 
 
-  Pada `linear regression` sama seperti nilai `intersep (b0)`. `Bias` ditetapkan secara random (acak). 
+  Pada `linear regression` sama seperti nilai `intersept (b0)`. `Bias` ditetapkan secara random (acak). 
 
 - ***Activation funcion***
 
@@ -590,6 +694,5 @@ Keadaan dimana data observasi berada di sekitar rata-rata.
 - ***Batch size***
 
   Jumlah observasi yang diikutsertakan untuk satu iterasi.
-
 
 
