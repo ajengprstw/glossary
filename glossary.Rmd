@@ -199,6 +199,97 @@ Tipe data ini digunakan untuk menyimpan nilai yang berulang. Contoh: `Perempuan`
 
 # Data Visualization
 
+- ***Plot***
+
+  Sebuah visualisasi yang menggambarkan/merepresentasikan suatu data, sering disebut sebagai `chart`.
+
+- ***Data wrangling***
+
+  Serangkaian proses yang dilakukan untuk mebersihkan/merapikan data mentah/awal, sering disebut sebagai `data preparation`/`data cleansing`/`data pre-processing`.
+
+- ***Aggregation***
+
+  Rangkuman informasi suatu data yang sudah dikelompokkan berdasarkan suatu variabel/kolom tertentu.
+
+- ***Exploratory***
+
+  Langkah awal dalam melakukan analisis data yang bertujuan untuk megetahui karakteristik suatu data, biasanya dilakukan dengan membuat visualisasi sederhana.
+
+- ***Explanatory***
+
+  Hal yang dilakukan untuk menyampaikan informasi yang terkandung dalam suatu data, biasanya dilakukan dengan membuat visualisasi yang lebih kompleks dan informatif.
+
+- ***Box plot***
+
+  `Plot` yang digunakan untuk menggambarakan persebaran data yang bertipe numerik/angka.
+
+- ***Scatter plot***
+
+  `Plot` yang digunakan untuk menggambarkan persebaran dan hubungan (`correlation`) antara dua variabel bertipe numerik/angka.
+
+- ***Regresion line***
+
+  Sebuah garis yang menggambarkan pola linier dan hubungan (`correlation`) antar variabel.
+
+- ***Histogram***
+
+  `Plot` yang digunakan untuk menggambarkan persebaran  data yang bertipe numerik/angka.
+
+- ***Bins***
+
+  Rentang nilai setiap batang pada `histogram`.
+
+- ***Density Plot***
+
+  `Plot` yang digunakan untuk menggambarkan persebaran  data yang bertipe numerik/angka.
+
+- ***Line chart***
+
+  `Plot` yang digunakan untuk menggambarkan pola trend suatu data bertipe numerik/angka.
+
+- ***Pie chart***
+
+  `Plot` yang digunakan untuk menggambarkan jumlah/frekusensi data yang bertipe kategorik. `Pie chart` tidak disarankan untuk digunakan dalam `exploratory` maupun `explanatory` karena bentuknya yang menggunakan luas area untuk menggambarkan jumlah/frekuensi data.
+
+- ***Bar plot***
+
+  `Plot` yang digunakan untuk menggambarkan jumlah/frekusensi data yang bertipe kategorik.
+
+- ***Package***
+
+  Kumpulan fungsi, sering disebut sebagai `library`.
+
+- ***ggplot2***
+
+  Kumpulan fungsi yang digunakan untuk membuat visualisasi.
+
+- ***Mapping***
+
+  Memetakan/menentukan `axis` ataupun elemen lain (warna, ukuran, dll) pada `plot` berdasarkan variabel-variabel yang tedapat pada data.
+
+- ***Axis***
+
+  Sumbu pada `plot`, terbagi menjadi sumbu horizontal (x) dan sumbu vertikal (y).
+ 
+- ***Aesthetic***
+
+  "Sesuatu yang dapat dilihat" (`axis`, warna, ukuran, bentuk, dll).
+
+- ***Layer***
+
+  Pada `ggplot2` dalam membuat `plot` menggunakan konsep lukisan, dimana plot dibuat dengan cara `layer-by-layer` (lapis per lapis). 
+
+- ***Geometry***
+
+  Jenis `plot` yang ingin digunakan/ditambahkan.
+
+- ***Reshaping***
+
+  Mengubah bentuk data yang awalnya melebar menjadi memanjang, atau sebaliknya.
+
+- ***Faceting***
+
+  Membuat jenis `plot` yang sama menjadi beberapa bagian berdasarkan variabel tertentu.
 
 # Interactive Plotting
 
@@ -276,39 +367,6 @@ Keadaan dimana model yang dibuat hanya dapat memprediksi dengan baik data pelati
 
 # Classification 2
 
-# Time Series
-
-- ***Autocorrelation***
-
-Hubungan korelasi antara data time series dengan periode waktu yang berbeda.
-
-- ***Autoregressive model (AR)***
-
-Autoregressive ini mirip dengan regresi linear, hanya saja dia melakukan regresi terhadap dirinya sendiri.
-
-- ***Integrated(I)***
-Menjelaskan mengenai berapa kali model melakukan differencing.
-
-- ***Moving Average MA***
-
-Moving Average digunakan untuk smoothing error.
-
-- ***Random Walk***
-
-Random walk adalah bentuk data time series yang tidak stasioner. 
-
-- ***Trend***
-
-Data trend merupakan keadaan ketika observasi cenderung naik atau menurun pada suatu periode waktu.
-
-- ***Seasonal***
-
-Seasonal effects terjadi jika data observasi memiliki pola yang berulang sesuai dengan siklus tertentu.
-
-- ***Stationary patern***
-
-Keadaan dimana data observasi berada di sekitar rata-rata.
-
 # Unsupervised Learning
 
 - **Principal Component**
@@ -359,4 +417,122 @@ Keadaan dimana data observasi berada di sekitar rata-rata.
 
   Salah satu metode yang digunakan untuk menentukan jumlah cluster yang optimum.
 
+# Time Series
+
+- ***Autocorrelation***
+
+Hubungan korelasi antara data time series dengan periode waktu yang berbeda.
+
+- ***Autoregressive model (AR)***
+
+Autoregressive ini mirip dengan regresi linear, hanya saja dia melakukan regresi terhadap dirinya sendiri.
+
+- ***Integrated(I)***
+Menjelaskan mengenai berapa kali model melakukan differencing.
+
+- ***Moving Average MA***
+
+Moving Average digunakan untuk smoothing error.
+
+- ***Random Walk***
+
+Random walk adalah bentuk data time series yang tidak stasioner. 
+
+- ***Trend***
+
+Data trend merupakan keadaan ketika observasi cenderung naik atau menurun pada suatu periode waktu.
+
+- ***Seasonal***
+
+Seasonal effects terjadi jika data observasi memiliki pola yang berulang sesuai dengan siklus tertentu.
+
+- ***Stationary patern***
+
+Keadaan dimana data observasi berada di sekitar rata-rata.
+
 # Neural Network
+
+- ***Optimization***
+
+  Metode yang digunakan untuk meminimumkan error/kesalahan pada model neural network.
+
+- ***Predictor***
+
+  Variabel yang digunakan untuk menentukan/mempediksi `target variable`.
+
+- ***Target variable***
+
+  Variabel yang akan diprediksi nilainya berdasarkan `predictor`. 
+
+- ***Node***
+
+  Unit terkecil pada arsitektur neural network yang berfungsi untuk melakukan transfer informasi, sering disebut sebagai `neuron`.
+
+- ***Input layer***
+
+  Lapisan pertama pada arsitektur neural network. Jumlah `node` pada `input layer` bergantung pada jumlah `prediktor`.
+
+- ***Output layer***
+
+  Lapisan terakhir pada arsitektur neural network. Jumlah `node` pada `output layer` bergantung pada jenis `target variable`.
+
+- ***Hidden layer***
+
+  Lapisan yang terletak di antara `input layer` dan `output layer`. Jumlah `hidden layer` dan jumlah `node` di setiap `hidden layer` ditentukan oleh peneliti.
+  
+- ***Weight***
+
+  Besar bobot yang menggambarkan besar informasi yang diteruskan dari setiap `node`. `Weight` ditetapkan secara random (acak).
+
+- ***Linear regression***
+
+  Suatu metode yang digunakan untuk memprediksi `target variable` bertipe numerik/angka.
+
+- ***Intersep***
+
+  Titik perpotongan `regression line` dengan sumbu vertikal (y). 
+
+- ***Bias*** 
+
+  Pada `linear regression` sama seperti nilai `intersep (b0)`. `Bias` ditetapkan secara random (acak). 
+
+- ***Activation funcion***
+
+  Fungsi yang digunakan untuk mengubah interval nilai (informasi) yang masuk ke setiap `node` pada `hidden layer` dan `output layer`.
+  
+- ***Cost function***
+
+  Fungsi error.
+
+- ***Feedforward*** 
+
+  Proses pada neural network yang dimulai dari `input layer` hingga menghasilkan nilai prediksi.
+
+- ***Backpropagation***
+
+  Proses pada neural network ketika melakukan optimisasi dan melakukan update `weight`.
+
+- ***Epoch***
+
+  Satu kali proses `feedforward` dan `backpropagation`.
+  
+- ***Graident***
+
+  Hasil turunan dari `cost function`.
+  
+- ***Dummy Variable***
+
+  Hasil transformasi varibel bertipe kategorik.
+
+- ***Learning rate***
+
+  Besar nilai yang menentukan seberapa besar `gardient` yang digunakan untuk melakukan update `weight`.
+
+- ***Batch size***
+
+  Jumlah observasi yang dikutertakan untuk satu iterasi.
+
+
+
+
+
