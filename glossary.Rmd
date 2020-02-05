@@ -418,9 +418,87 @@ Residual deviance menunjukkan seberapa baik target variabel diprediksi oleh mode
 
 Maximum Likelihood Estimator merupakan pendekatan statistik untuk memperkirakan paramater pada model.
 
-
-
 # Classification 2
+
+- ***Probability***
+
+  Besar kemungkinan suatu kejadian. 
+
+- ***Independent Events***
+
+  Kejadian yang masing-masing tidak saling berkaitan satu sama lain.
+
+- ***Dependent Events***
+ 
+  Kejadian yang masing-masing saling berkaitan satu sama lain (kemungkinan terjadinya suatu kejadian akan memepengaruhi kemungkinan terjadinya kejadian lain. 
+
+- ***Laplace estimator***
+
+  Menambahkan nilai yang sangat kecil, biasanya adalah 1 pada masing-masing jumlah kejadian.
+
+- ***Text mining***
+
+  Analisis yang dilakukan dengan memanfaatkan teks sebagai predictor.
+
+- ***Corpus***
+ 
+  Objek yang digunakan pada `text mining`, berisi kumpulan teks yang disebut sebagai dokumen.
+  
+- ***Punctuation***
+
+  Tanda baca pada teks.
+
+- ***Stopwords***
+
+  Kumpulan kata yang tidak memiliki makna jika diikutsertakan dalam pemodelan klasifikasi.
+
+- ***Stemming***
+
+  Proses untuk mengambil kata dasar dari sebuah kata berimbuhan.
+  
+- ***DocumentTermMatrix***
+
+  Proses untuk membagi setiap konten teks menjadi kata-kata yang mewakili `predictor`.
+
+- ***ROC (Receiver Operating Characteristic)***
+
+  Kurva yang menggambarkan performa model klasifikasi untuk seluruh `threshold`.
+
+- ***AUC***
+ 
+  Luas area di bawah kurva `ROC`, menggambarkan keberhasilan model klasifikasi dalam memprediksi/membedakan kedua kelas dari `target variable`.
+ 
+- ***Entropy***
+
+  Derajat kehomogenan.
+
+- ***Information gain***
+
+  Penurunan `entropy` setelah terjadi pembagian/spliting data.
+
+- ***Pruning***
+
+  Membatasi pembentukan cabang pada pohon (menyederhanakan pohon yang dibentuk).
+
+- ***Terminal node***
+
+  Bagian data yang sudah tidak dapat terbagi lagi.
+
+- ***K-fold cross validation***
+ 
+  Membagi data sebanyak k bagian, setiap bagian akan digunakan menjadi train dan test secara bergantian.
+  
+- ***Ensamble method***
+
+  Kumpulan beberapa algoritma prediktif untuk memperoleh performa yang lebih baik.
+
+- ***OOB***
+
+  Besar error dari hasil prediksi pada data aktual yang belum dilihat oleh model.
+
+- ***Variable importance***
+
+  `Predictor` yang dianggap penting dalam model.
 
 # Unsupervised Learning
 
@@ -543,10 +621,6 @@ Keadaan dimana data observasi berada di sekitar rata-rata.
 
   Suatu metode yang digunakan untuk memprediksi `target variable` bertipe numerik/angka.
 
-- ***Intersep***
-
-  Titik perpotongan `regression line` dengan sumbu vertikal (y). 
-
 - ***Bias*** 
 
   Pada `linear regression` sama seperti nilai `intersep (b0)`. `Bias` ditetapkan secara random (acak). 
@@ -590,6 +664,5 @@ Keadaan dimana data observasi berada di sekitar rata-rata.
 - ***Batch size***
 
   Jumlah observasi yang diikutsertakan untuk satu iterasi.
-
 
 
