@@ -298,12 +298,8 @@ Tempat untuk menempatkan dan menjalankan code pada rmarkdown.
 - ***Faceting***
 
   Membuat jenis `plot` yang sama menjadi beberapa bagian berdasarkan variabel tertentu.
-<<<<<<< HEAD
 
-=======
->>>>>>> a9482029a3541c80db542b06d0ea32c1616cb5d1
-
-# Interactive Plotting
+# Interactive Plotting and Web Dashboard
 
 - ***UI***
 
@@ -329,35 +325,47 @@ Data yang dikumpulkan sebagai informasi, secara umum mengacu pada 1 baris data y
 
 - ***Variabel Target***
 
-Variabel yang ingin diprediksi/dimodelkan
+Variabel yang ingin diprediksi/dimodelkan.
 
 - ***Variabel Prediktor***
 
-Variabel yang digunakan untuk menebak variabel target
-
-- ***Residual/Error***
-
-Selisih perbedaan antara nilai yang diprediksi dan nilai sebenarnya
-
-- ***R Squared***
-
-Persentase variansi target variabel yang dapat dijelaskan oleh model. Ukuran yang bisa digunakan untuk mengukur `kebaikan model`
-
-- ***Mean Squared Error***
-
-Rata-rata dari kuadrat error. Ukuran yang bisa digunakan untuk mengukur `kebaikan model`
+Variabel yang digunakan untuk menebak variabel target.
 
 - ***Variabel Dummy***
 
 Variabel dummy adalah variabel yang hanya mengambil nilai 0 atau 1 pada data kategorik. Variabel ini digunakan untuk membuat data kategori yang bersifat kualitatif menjadi kuantitatif.
 
+- ***Ordinary Least Square***
+
+Memperkirakan parameter model regresi dengan meminimumkan nilai Sum Squared Error (SSE).
+
+- ***Residual/Error***
+
+Selisih perbedaan antara nilai yang diprediksi dan nilai sebenarnya.
+
+- ***R Squared***
+
+Persentase variansi target variabel yang dapat dijelaskan oleh model. Ukuran yang bisa digunakan untuk mengukur `kebaikan model`.
+
+- ***Adjusted R Squared***
+
+Tidak jauh berbeda dengan R Squared, yaitu persentase variansi target variabel yang dijelaskan oleh model, perbedaannya adalah Adjusted R squared memmperhitungkan banyak observasi dan prediktor yang digunakan.
+
 - ***Akaike Information Criterion(AIC)***
 
 Ukuran nilai yang menjelaskan seberapa banyak informasi yang hilang pada model.
 
-- ***Ordinary Least Square***
+- ***Feature Selection***
 
-Memperkirakan parameter model regresi dengan meminimumkan nilai Sum Squared Error (SSE)
+Feature selection merupakan tahapan dalam memilih variabel yang akan digunakan.
+
+- ***Stepwise***
+
+Stepwise adalah algoritma yang bertahap menambahkan atau mengurangkan variabel dengan mengacu pada nilai AIC terkecil.
+
+- ***Mean Squared Error***
+
+Rata-rata dari kuadrat error. Ukuran yang bisa digunakan untuk mengukur `kebaikan model`.
 
 - ***Homoscedasticity***
 
@@ -370,9 +378,17 @@ Keadaan dimana terdapat hubungan korelasi yang tinggi antar variabel independen 
 
 # Classification 1
 
+- ***Klasifikasi***
+
+Klasifikasi adalah metode machine learning yang digunakan untuk memprediksi target dengan nilai kategorik.
+
 - ***Odds***
 
 Ukuran yang dapat menjelaskan probability. Dimana odds bisa di dapatkan dari p/(1-p) dimana p adalah peluang suatu kejadian terjadi.
+
+- ***Odds Ratio***
+
+Odds Ratio adalah perbandingan antara dua odds
 
 - ***Sigmoid Function***
 
@@ -385,6 +401,24 @@ Keadaan dimana jumlah observasi antar kelas tidak seimbang.
 - ***Overfitting***
 
 Keadaan dimana model yang dibuat hanya dapat memprediksi dengan baik data pelatihan. Namun ketika diberikan `unseen data`, model tersebut tidak dapat memprediksi dengan baik.
+
+- ***Independence of observations***
+
+Antar observasi independen satu sama lain.
+
+- ***Null Deviance***
+
+Null deviance menunjukkan seberapa baik target variabel diprediksi oleh model berdasarkan nilai intercept.
+
+- ***Residual Deviance***
+
+Residual deviance menunjukkan seberapa baik target variabel diprediksi oleh model berdasarkan intercept dan semua variabel independen yang digunakan.
+
+- ***Maximum Likelihood Estimator***
+
+Maximum Likelihood Estimator merupakan pendekatan statistik untuk memperkirakan paramater pada model.
+
+
 
 # Classification 2
 
@@ -438,11 +472,6 @@ Keadaan dimana model yang dibuat hanya dapat memprediksi dengan baik data pelati
 
   Salah satu metode yang digunakan untuk menentukan jumlah cluster yang optimum.
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> a9482029a3541c80db542b06d0ea32c1616cb5d1
 # Time Series
 
 - ***Autocorrelation***
@@ -542,7 +571,7 @@ Keadaan dimana data observasi berada di sekitar rata-rata.
 
   Satu kali proses `feedforward` dan `backpropagation`.
   
-- ***Graident***
+- ***Gradient***
 
   Hasil turunan dari `cost function`.
   
@@ -551,23 +580,16 @@ Keadaan dimana data observasi berada di sekitar rata-rata.
   Hasil transformasi varibel bertipe kategorik.
 
 - ***Learning rate***
-<<<<<<< HEAD
 
-  Besar nilai yang menentukan seberapa besar `gardient` yang digunakan untuk melakukan update `weight`.
-
-- ***Batch size***
-
-  Jumlah observasi yang dikutertakan untuk satu iterasi.
-=======
-
-  Besar nilai yang menentukan seberapa besar `gardient` yang digunakan untuk melakukan update `weight`.
+  Besar nilai yang menentukan seberapa besar `gradient` yang digunakan untuk melakukan update `weight`.
 
 - ***Batch size***
 
-  Jumlah observasi yang dikutertakan untuk satu iterasi.
+  Jumlah observasi yang diikutsertakan untuk satu iterasi. Besar nilai yang menentukan seberapa besar `gradient` yang digunakan untuk melakukan update `weight`.
 
+- ***Batch size***
 
+  Jumlah observasi yang diikutsertakan untuk satu iterasi.
 
->>>>>>> a9482029a3541c80db542b06d0ea32c1616cb5d1
 
 
