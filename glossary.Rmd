@@ -11,7 +11,10 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+<<<<<<< HEAD
 \newpage
+=======
+>>>>>>> fd590370d872411a2a72c6bbe040aa7807fa858d
 
 # Programming for Data Science
 
@@ -229,7 +232,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
   Nilai/peluang kesalahan yang diperoleh dari hasil perhitungan statistik. 
 
+<<<<<<< HEAD
 \newpage
+=======
+>>>>>>> fd590370d872411a2a72c6bbe040aa7807fa858d
 
 # Data Visualization
 
@@ -326,7 +332,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
   Salah satu `package` yang cukup populer untuk membuat visualisasi berupa peta interaktif.
 
+<<<<<<< HEAD
 \newpage
+=======
+>>>>>>> fd590370d872411a2a72c6bbe040aa7807fa858d
 
 # Interactive Plotting and Web Dashboard
 
@@ -351,7 +360,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
   Interactive plotting merupakan upaya meningkatkan informasi yang terdapat pada sebuah visualisasi (`plot`).
 
+<<<<<<< HEAD
 \newpage
+=======
+>>>>>>> fd590370d872411a2a72c6bbe040aa7807fa858d
 
 # Regression Model
 
@@ -558,7 +570,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
   `Predictor` yang dianggap penting dalam model.
 
+<<<<<<< HEAD
 \newpage
+=======
+>>>>>>> fd590370d872411a2a72c6bbe040aa7807fa858d
 
 # Unsupervised Learning
 
@@ -611,7 +626,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
   Salah satu metode yang digunakan untuk menentukan jumlah cluster yang optimum.
 
+<<<<<<< HEAD
 \newpage
+=======
+>>>>>>> fd590370d872411a2a72c6bbe040aa7807fa858d
 
 # Time Series
 
@@ -652,7 +670,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
   Keadaan dimana data time series berada di sekitar rata-rata.
 
+<<<<<<< HEAD
 \newpage
+=======
+>>>>>>> fd590370d872411a2a72c6bbe040aa7807fa858d
 
 # Neural Network
 
