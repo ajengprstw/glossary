@@ -11,6 +11,22 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Programming for Data Science
 
+- ***R Markdown***
+
+  Tipe file pada R yang dapat mengkombinasikan narasi dan code.
+  
+- ***Console***
+
+Tempat untuk menjalankan perintah/code.
+
+- ***Chunk***
+
+Tempat untuk menempatkan dan menjalankan code pada `R Markdown`.
+
+- ***Package***
+
+  Kumpulan fungsi, sering disebut sebagai `library`.
+
 - ***Implicit coercion***
 
   Konversi ke tipe data yang paling umum.
@@ -55,21 +71,6 @@ Objek di R yang dapat menyimpan elemen yang memiliki tipe data yang berbeda namu
 
 Tipe data ini digunakan untuk menyimpan nilai yang berulang (nilai dengan tipe data kategorik). Contoh: `Gender` terdiri dari `Laki-laki` dan `Perempuan`.
 
-- ***Console***
-
-Tempat untuk menjalankan perintah/code.
-
-- ***R Markdown***
-
-  Tipe file pada R.
-
-- ***Chunk***
-
-Tempat untuk menempatkan dan menjalankan code pada `R Markdown`.
-
-- ***Package***
-
-  Kumpulan fungsi, sering disebut sebagai `library`.
   
 # Practical Statistics
 
@@ -323,7 +324,7 @@ Server berisi perintah untuk proses `aggregation` dan membuat visualisasi yang a
 
 - ***Dashboard***
 
-
+Dashboard merupakan media untuk mengumpulkan visualisasi terkait yang dapat meningkatkan pemahaman informasi yang lebih lengkap.
 
 - ***Deployment***
 
@@ -429,7 +430,11 @@ Keadaan dimana jumlah observasi antar kelas tidak seimbang.
 
 - ***Data train***
 
+Data yang digunakan untuk membuat model.
+
 - ***Data test***
+
+Data yang digunakan untuk menguji kebaikan model.
 
 - ***Overfitting***
 
@@ -453,17 +458,13 @@ Antar observasi independen satu sama lain.
 
 # Classification 2
 
-<<<<<<< HEAD
-- ***Independent Events***
 
-=======
 - ***Probability***
 
   Besar kemungkinan suatu kejadian. 
 
 - ***Independent Events***
 
->>>>>>> a21f390ca49cff43783764ddc531eb1f5c6fa4f1
   Kejadian yang masing-masing tidak saling berkaitan satu sama lain.
 
 - ***Dependent Events***
@@ -472,15 +473,11 @@ Antar observasi independen satu sama lain.
 
 - ***Laplace estimator***
 
-<<<<<<< HEAD
   Menambahkan nilai pada setiap prediktor, biasanya adalah 1 pada masing-masing jumlah kejadian.
-=======
-  Menambahkan nilai yang sangat kecil, biasanya adalah 1 pada masing-masing jumlah kejadian.
->>>>>>> a21f390ca49cff43783764ddc531eb1f5c6fa4f1
 
 - ***Text mining***
 
-  Analisis yang dilakukan dengan memanfaatkan teks sebagai predictor.
+  Analisis yang dilakukan dengan memanfaatkan teks sebagai prediktor.
 
 - ***Corpus***
  
@@ -534,11 +531,7 @@ Antar observasi independen satu sama lain.
 
   Kumpulan beberapa algoritma prediktif untuk memperoleh performa yang lebih baik.
 
-<<<<<<< HEAD
 - ***OOB (Out of Bag)***
-=======
-- ***OOB***
->>>>>>> a21f390ca49cff43783764ddc531eb1f5c6fa4f1
 
   Besar error dari hasil prediksi pada data aktual yang belum dilihat oleh model.
 
@@ -604,7 +597,11 @@ Antar observasi independen satu sama lain.
 
 - ***Smoothing***
 
+Smoothing merupakan transformasi data time series yang dapat membantu melihat pola pada data.
+
 - ***Differencing***
+
+Differencing merupakan tranformasi data yang digunakan untuk membuat data time series stasioner.
 
 - ***Autoregressive model (AR)***
 
