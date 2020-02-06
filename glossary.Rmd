@@ -9,7 +9,9 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+
 # Programming for Data Science
+
 
 - ***R Markdown***
 
@@ -17,11 +19,11 @@ knitr::opts_chunk$set(echo = TRUE)
   
 - ***Console***
 
-Tempat untuk menjalankan perintah/code.
+  Tempat untuk menjalankan perintah/code.
 
 - ***Chunk***
 
-Tempat untuk menempatkan dan menjalankan code pada `R Markdown`.
+  Tempat untuk menempatkan dan menjalankan code pada `R Markdown`.
 
 - ***Package***
 
@@ -33,46 +35,47 @@ Tempat untuk menempatkan dan menjalankan code pada `R Markdown`.
 
 - ***Vector***
 
-Suatu objek di R yang dapat menyimpan lebih dari 1 elemen. `Vector` hanya dapat menyimpan tipe data yang sama. Jika terdapat lebih dari satu tipe data pada satu elemen, maka akan dilakukan `implicit coercion`.
+  Suatu objek di R yang dapat menyimpan lebih dari 1 elemen. `Vector` hanya dapat menyimpan tipe data yang sama. Jika terdapat lebih dari satu tipe data pada satu elemen, maka akan dilakukan `implicit coercion`.
 
 - ***Character***
 
-Tipe data ini digunakan untuk menyimpan nilai dalam bentuk karakter, sering disebut sebagai `string`.
+  Tipe data ini digunakan untuk menyimpan nilai dalam bentuk karakter, sering disebut sebagai `string`.
 
 - ***Numeric***
 
-Tipe data ini digunakan untuk menyimpan nilai dalam bentuk angka (bilangan desimal).
+  Tipe data ini digunakan untuk menyimpan nilai dalam bentuk angka (bilangan desimal).
 
 - ***Integer***
 
-Tipe data ini digunakan untuk menyimpan nilai dalam bentuk angka (bilangan bulat).
+  Tipe data ini digunakan untuk menyimpan nilai dalam bentuk angka (bilangan bulat).
 
 - ***Complex***
 
-Tipe data ini digunakan untuk menyimpan gabungan nilai `numeric` dan imajiner. Contoh: `1+3i`.
+  Tipe data ini digunakan untuk menyimpan gabungan nilai `numeric` dan imajiner. Contoh: `1+3i`.
 
 - ***Logical***
 
-Tipe data ini digunakan untuk menyimpan nilai logika (`TRUE` dan `FALSE`). 
+  Tipe data ini digunakan untuk menyimpan nilai logika (`TRUE` dan `FALSE`). 
 
 - ***Matrix***
 
-Objek di R yang dapat menyimpan elemen dalam dua dimensi. `Matrix` hanya dapat menyimpan nilai dengan tipe data yang sama, kemudian disusun secara baris dan kolom.
+  Objek di R yang dapat menyimpan elemen dalam dua dimensi. `Matrix` hanya dapat menyimpan nilai dengan tipe data yang sama, kemudian disusun secara baris dan kolom.
 
 - ***List***
 
-Objek di R yang dapat menyimpan elemen yang memiliki tipe data dan jumlah elemen yang berbeda.
+  Objek di R yang dapat menyimpan elemen yang memiliki tipe data dan jumlah elemen yang berbeda.
 
 - ***Data frame***
 
-Objek di R yang dapat menyimpan elemen yang memiliki tipe data yang berbeda namum memiliki jumlah elemen yang sama.
+  Objek di R yang dapat menyimpan elemen yang memiliki tipe data yang berbeda namum memiliki jumlah elemen yang sama.
 
 - ***Factor***
 
-Tipe data ini digunakan untuk menyimpan nilai yang berulang (nilai dengan tipe data kategorik). Contoh: `Gender` terdiri dari `Laki-laki` dan `Perempuan`.
+  Tipe data ini digunakan untuk menyimpan nilai yang berulang (nilai dengan tipe data kategorik). Contoh: `Gender` terdiri dari `Laki-laki` dan `Perempuan`.
 
   
 # Practical Statistics
+
 
 - ***Population***
 
@@ -87,6 +90,8 @@ Tipe data ini digunakan untuk menyimpan nilai yang berulang (nilai dengan tipe d
   Suatu nilai yag merangkum data, tujuannya untuk menggambarkan keadaan data secara umum.
   
 - ***Inferential Statistics***
+
+  Metode yang digunakan untuk menarik kesimpulan terhadap `population` dengan memanfaatkan informasi dari `sample`.
   
 - ***Measures of centaral tendency***
 
@@ -94,7 +99,7 @@ Tipe data ini digunakan untuk menyimpan nilai yang berulang (nilai dengan tipe d
   
 - ***Mean***
 
- Nilai rata-rata (total seluruh data dibagi dengan banyaknya data) dari data yang bertipe numerik/angka. Nilai rata-rata suatu `population` dinotasikan oleh $\mu$, sedangkan nilai rata-rata suatu `sample` dinotasikan oleh $\bar{x}$.
+  Nilai rata-rata (total seluruh data dibagi dengan banyaknya data) dari data yang bertipe numerik/angka. Nilai rata-rata suatu `population` dinotasikan oleh $\mu$, sedangkan nilai rata-rata suatu `sample` dinotasikan oleh $\bar{x}$.
 
 - ***Quartil***
 
@@ -154,7 +159,7 @@ Tipe data ini digunakan untuk menyimpan nilai yang berulang (nilai dengan tipe d
   
 - ***Normal distribution***
 
- Fungsi/bentuk yang menggambarkan persebaran data bertipe numerik/angka, bentuknya hampir menyerupai sebuah lonceng (simetris). Data yang memiliki distribusi normal cenderung mengelompok di sekitar `mean` (pusat lonceng).
+  Fungsi/bentuk yang menggambarkan persebaran data bertipe numerik/angka, bentuknya hampir menyerupai sebuah lonceng (simetris). Data yang memiliki distribusi normal cenderung mengelompok di sekitar `mean` (pusat lonceng).
  
 - ***Central limit theorem***
 
@@ -220,7 +225,9 @@ Tipe data ini digunakan untuk menyimpan nilai yang berulang (nilai dengan tipe d
 
   Nilai/peluang kesalahan yang diperoleh dari hasil perhitungan statistik. 
 
+
 # Data Visualization
+
 
 - ***Plot***
 
@@ -312,53 +319,59 @@ Tipe data ini digunakan untuk menyimpan nilai yang berulang (nilai dengan tipe d
 
 - ***Leaflet***
 
+  Salah satu `package` yang cukup populer untuk membuat visualisasi berupa peta interaktif.
+
+
 # Interactive Plotting and Web Dashboard
+
 
 - ***User Interface (UI)***
 
-User interface merupakan tampilan atau bagian visual yang dapat dilihat oleh user/pengguna.
+  User interface merupakan tampilan atau bagian visual yang dapat dilihat oleh user/pengguna.
 
 - ***Server***
 
-Server berisi perintah untuk proses `aggregation` dan membuat visualisasi yang akan ditampilkan pada dashboard.
+  Server berisi perintah untuk proses `aggregation` dan membuat visualisasi yang akan ditampilkan pada dashboard.
 
 - ***Dashboard***
 
-Dashboard merupakan media untuk mengumpulkan visualisasi terkait yang dapat meningkatkan pemahaman informasi yang lebih lengkap.
+  Dashboard merupakan media untuk mengumpulkan visualisasi terkait yang dapat meningkatkan pemahaman informasi yang lebih lengkap.
 
 - ***Deployment***
 
-Deployment merupakan suatu proses yang bertujuan untuk mendistribusikan suatu `dashboard` yang dapat beroperasi dan diakses secara publik.
+  Deployment merupakan suatu proses yang bertujuan untuk mendistribusikan suatu `dashboard` yang dapat beroperasi dan diakses secara publik.
 
 - ***Interactive plotting***
 
-Interactive plotting merupakan upaya meningkatkan informasi yang terdapat pada sebuah visualisasi (`plot`).
+  Interactive plotting merupakan upaya meningkatkan informasi yang terdapat pada sebuah visualisasi (`plot`).
+
 
 # Regression Model
 
+
 - ***Observation***
 
-Data yang dikumpulkan sebagai informasi, secara umum mengacu pada 1 baris data yang terdiri dari beberapa variabel.
+  Data yang dikumpulkan sebagai informasi, secara umum mengacu pada 1 baris data yang terdiri dari beberapa variabel.
 
 - ***Target variable ***
 
-Variabel yang ingin diprediksi/dimodelkan, sering disebut sebagai `respon/dependen variable`.
+  Variabel yang ingin diprediksi/dimodelkan, sering disebut sebagai `respon/dependen variable`.
 
 - ***Predictor***
 
-Variabel yang digunakan untuk memprediksi `target variable`, sering disebut sebagi `independen variable`.
+  Variabel yang digunakan untuk memprediksi `target variable`, sering disebut sebagi `independen variable`.
 
 - ***Dummy variable***
 
-`Dummy Variable` adalah hasil transformasi variabel kategorik dengan nilai 0 atau 1. Variabel ini digunakan untuk membuat data kategorik yang bersifat kualitatif menjadi kuantitatif.
+  `Dummy Variable` adalah hasil transformasi variabel kategorik dengan nilai 0 atau 1. Variabel ini digunakan untuk membuat data kategorik yang bersifat kualitatif menjadi kuantitatif.
 
 - ***Residual/Error***
 
-Selisih antara nilai yang diprediksi dan nilai sebenarnya.
+  Selisih antara nilai yang diprediksi dan nilai sebenarnya.
 
 - ***Ordinary least square***
 
-Memperkirakan parameter model regresi dengan meminimumkan nilai Sum Squared Error (SSE).
+  Memperkirakan parameter model regresi dengan meminimumkan nilai Sum Squared Error (SSE).
 
 - ***Intercept***
 
@@ -370,35 +383,35 @@ Memperkirakan parameter model regresi dengan meminimumkan nilai Sum Squared Erro
 
 - ***R Squared***
 
-Persentase variansi target variabel yang dapat dijelaskan oleh model (`predictor`). Ukuran yang bisa digunakan untuk mengukur `kebaikan model`.
+  Persentase variansi target variabel yang dapat dijelaskan oleh model (`predictor`). Ukuran yang bisa digunakan untuk mengukur `kebaikan model`.
 
 - ***Adjusted R Squared***
 
-Persentase variansi target variabel yang dijelaskan oleh model, perbedaannya dengan `R Squared` adalah `Adjusted R squared` memmperhitungkan banyak observasi dan signifikansi prediktor yang digunakan.
+  Persentase variansi target variabel yang dijelaskan oleh model, perbedaannya dengan `R Squared` adalah `Adjusted R squared` memmperhitungkan banyak observasi dan signifikansi prediktor yang digunakan.
 
 - ***Akaike Information Criterion (AIC)***
 
-Nilai yang menjelaskan besar informasi yang hilang pada model.
+  Nilai yang menjelaskan besar informasi yang hilang pada model.
 
 - ***Feature selection***
 
-Feature selection merupakan tahapan dalam memilih variabel yang akan digunakan.
+  Feature selection merupakan tahapan dalam memilih variabel yang akan digunakan.
 
 - ***Stepwise***
 
-Stepwise adalah algoritma yang secara bertahap menambahkan atau mengurangkan variabel dengan mengacu pada nilai `AIC` terkecil.
+  Stepwise adalah algoritma yang secara bertahap menambahkan atau mengurangkan variabel dengan mengacu pada nilai `AIC` terkecil.
 
 - ***Mean squared error***
 
-Rata-rata dari `error` kuadrat. Ukuran yang bisa digunakan untuk mengukur `kebaikan model`.
+  Rata-rata dari `error` kuadrat. Ukuran yang bisa digunakan untuk mengukur `kebaikan model`.
 
 - ***Homoscedasticity***
 
-Residual yang dihasilkan bernilai konstan dan tidak membentuk pola apapun.
+  Residual yang dihasilkan bernilai konstan dan tidak membentuk pola apapun.
 
 - ***Multicolinearity***
 
-Keadaan dimana terdapat hubungan/`correlation` yang tinggi antar `predictor` pada model regresi.
+  Keadaan dimana terdapat hubungan/`correlation` yang tinggi antar `predictor` pada model regresi.
 
 
 # Classification 1
@@ -406,7 +419,7 @@ Keadaan dimana terdapat hubungan/`correlation` yang tinggi antar `predictor` pad
 
 - ***Classification***
 
-`Classification` adalah metode yang digunakan untuk memprediksi `target variable` bertipe kategorik (`factor`).
+  `Classification` adalah metode yang digunakan untuk memprediksi `target variable` bertipe kategorik (`factor`).
 
 - ***Probability***
 
@@ -414,54 +427,51 @@ Keadaan dimana terdapat hubungan/`correlation` yang tinggi antar `predictor` pad
 
 - ***Odds***
 
-Ukuran yang dapat menjelaskan probability. Dimana odds bisa di dapatkan dari `p/(1-p)` dimana `p` adalah peluang suatu kejadian terjadi.
+  Ukuran yang dapat menjelaskan probability. Dimana odds bisa di dapatkan dari `p/(1-p)` dimana `p` adalah peluang suatu kejadian terjadi.
 
 - ***Odds ratio***
 
-Odds Ratio adalah perbandingan antara dua `odds`.
+  Odds Ratio adalah perbandingan antara dua `odds`.
 
 - ***Sigmoid function***
 
-`Sigmoid function` merupakan fungsi yang digunakan untuk mentransformasi nilai prediksi ke nilai peluang yaitu antara 0 hingga 1.
+  `Sigmoid function` merupakan fungsi yang digunakan untuk mentransformasi nilai prediksi ke nilai peluang yaitu antara 0 hingga 1.
 
 - ***Class imbalance***
 
-Keadaan dimana jumlah observasi antar kelas tidak seimbang.
+  Keadaan dimana jumlah observasi antar kelas tidak seimbang.
 
 - ***Data train***
 
-Data yang digunakan untuk membuat model.
+  Data yang digunakan untuk membuat model.
 
 - ***Data test***
 
-Data yang digunakan untuk menguji kebaikan model.
+  Data yang digunakan untuk menguji kebaikan model.
 
 - ***Overfitting***
 
-Keadaan dimana model yang dibuat hanya dapat memprediksi dengan baik `data train`. Namun, ketika melakukan prediksi pada `data test`, model tersebut tidak dapat memprediksi dengan baik.
+  Keadaan dimana model yang dibuat hanya dapat memprediksi dengan baik `data train`. Namun, ketika melakukan prediksi pada `data test`, model tersebut tidak dapat memprediksi dengan baik.
 
 - ***Independence of observations***
 
-Antar observasi independen satu sama lain.
+  Antar observasi independen satu sama lain.
 
 - ***Null deviance***
 
-`Null deviance` menunjukkan seberapa baik `target variable` diprediksi oleh model berdasarkan nilai `intercept`.
+  `Null deviance` menunjukkan seberapa baik `target variable` diprediksi oleh model berdasarkan nilai `intercept`.
 
 - ***Residual deviance***
 
-`Residual deviance` menunjukkan seberapa baik `target variable` diprediksi oleh model berdasarkan `intercept` dan semua `predictor` yang digunakan.
+  `Residual deviance` menunjukkan seberapa baik `target variable` diprediksi oleh model berdasarkan `intercept` dan semua `predictor` yang digunakan.
 
 - ***Maximum likelihood estimator***
 
-`Maximum likelihood estimator` merupakan pendekatan statistik untuk memperkirakan paramater pada model `logistic regression`.
+  `Maximum likelihood estimator` merupakan pendekatan statistik untuk memperkirakan paramater pada model `logistic regression`.
+
 
 # Classification 2
 
-
-- ***Probability***
-
-  Besar kemungkinan suatu kejadian. 
 
 - ***Independent Events***
 
@@ -539,9 +549,11 @@ Antar observasi independen satu sama lain.
 
   `Predictor` yang dianggap penting dalam model.
 
+
 # Unsupervised Learning
 
-- **Principal Component**
+
+- ***Principal Component***
 
   Dimensi/variabel baru yang berisi rangkuman informasi dari keseluruhan variabel awal (data awal).
   
@@ -589,57 +601,53 @@ Antar observasi independen satu sama lain.
 
   Salah satu metode yang digunakan untuk menentukan jumlah cluster yang optimum.
 
+
 # Time Series
+
 
 - ***Autocorrelation***
 
-`Correlation` antar data `observation` pada periode waktu yang berbeda.
+  `Correlation` antar data `observation` pada periode waktu yang berbeda.
 
 - ***Smoothing***
 
-Smoothing merupakan transformasi data time series yang dapat membantu melihat pola pada data.
+  Smoothing merupakan transformasi data time series yang dapat membantu melihat pola pada data.
 
 - ***Differencing***
 
-Differencing merupakan tranformasi data yang digunakan untuk membuat data time series stasioner.
+  Differencing merupakan tranformasi data yang digunakan untuk membuat data time series stasioner.
 
 - ***Autoregressive model (AR)***
 
-`Autoregressive model` hampir sama dengan model `linear regression`, namun `predictor` yang digunakan adalah nilai `target variable` itu sendiri pada masa lampau.
+  `Autoregressive model` hampir sama dengan model `linear regression`, namun `predictor` yang digunakan adalah nilai `target variable` itu sendiri pada masa lampau.
 
 - ***Integrated (I)***
 
-Menjelaskan mengenai berapa kali model melakukan `differencing`.
+  Menjelaskan mengenai berapa kali model melakukan `differencing`.
 
 - ***Moving average (MA)***
 
-`Moving average` digunakan untuk melakukan `smoothing` terhadap `error.`
+  `Moving average` digunakan untuk melakukan `smoothing` terhadap `error.`
 
 - ***Trend***
 
-Data `trend` merupakan keadaan ketika observasi cenderung naik atau turun pada suatu periode waktu.
+  Data `trend` merupakan keadaan ketika observasi cenderung naik atau turun pada suatu periode waktu.
 
 - ***Seasonal***
 
-Efek `Seasonal` terjadi jika data time series memiliki pola berulang pada siklus tertentu.
+  Efek `Seasonal` terjadi jika data time series memiliki pola berulang pada siklus tertentu.
 
 - ***Stationary patern***
 
-Keadaan dimana data time series berada di sekitar rata-rata.
+  Keadaan dimana data time series berada di sekitar rata-rata.
+
 
 # Neural Network
+
 
 - ***Optimization***
 
   Metode yang digunakan untuk meminimumkan error/kesalahan pada model neural network.
-
-- ***Predictor***
-
-  Variabel yang digunakan untuk menentukan/memprediksi `target variable`.
-
-- ***Target variable***
-
-  Variabel yang akan diprediksi nilainya berdasarkan `predictor`. 
 
 - ***Node***
 
@@ -647,7 +655,7 @@ Keadaan dimana data time series berada di sekitar rata-rata.
 
 - ***Input layer***
 
-  Lapisan pertama pada arsitektur neural network. Jumlah `node` pada `input layer` bergantung pada jumlah `prediktor`.
+  Lapisan pertama pada arsitektur neural network. Jumlah `node` pada `input layer` bergantung pada jumlah `predictor`.
 
 - ***Output layer***
 
