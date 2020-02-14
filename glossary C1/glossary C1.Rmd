@@ -1,19 +1,13 @@
 ---
-output: 
-  pdf_document:
-    keep_tex: true
+output:
+  html_document: 
+    css: style.css
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
-<!-- <style> -->
-<!-- { -->
-<!--   font-family: sans-serif; -->
-<!--   text-align: justify; -->
-<!-- } -->
-<!-- </style> -->
 
 # Classification 1
 

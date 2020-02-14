@@ -1,7 +1,8 @@
 ---
 output:
+  html_document: 
+    css: style.css
   pdf_document: default
-  html_document: default
 ---
 
 ```{r setup, include=FALSE}
