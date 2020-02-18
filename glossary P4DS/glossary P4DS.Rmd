@@ -1,0 +1,60 @@
+---
+output:
+  html_document: 
+    css: style.css
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Programming for Data Science
+
+- ***Vector***
+
+Objek di R yang dapat menyimpan lebih dari 1 elemen. Vector hanya dapat menyimpan tipe data yang sama. Jika terdapat lebih dari satu tipe data pada satu elemen, maka akan dilakukan `implicit coercion` yaitu konversi ke tipe data yang paling umum.
+
+- ***Character***
+
+Tipe data ini digunakan untuk menyimpan nilai dalam bentuk karakter.
+
+- ***Numeric***
+
+Tipe data ini digunakan untuk menyimpan nilai dalam bentuk angka.
+
+- ***Integer***
+
+Tipe data ini digunakan untuk menyimpan nilai angka pada bilangan bulat.
+
+- ***Complex***
+
+Tipe data ini digunakan untuk menyimpan gabungan nilai numerik dan imajiner. Contoh: `1+3i`.
+
+- ***Logical***
+
+Tipe data logika yang hanya bernilai `TRUE` dan `FALSE`. 
+
+- ***Matrix***
+
+Objek di R yang dapat menyimpan elemen dalam dua dimensi. Matriks merupakan objek yang menyimpan tipe data yang sama dan disusun secara baris dan kolom.
+
+- ***List***
+
+Objek di R yang dapat menyimpan elemen yang memiliki tipe data dan jumlah elemen yang berbeda.
+
+- ***Data Frame***
+
+Objek di R yang dapat menyimpan elemen yang memiliki tipe data yang berbeda namum memiliki jumlah elemen yang sama.
+
+- ***Factor***
+
+Tipe data ini digunakan untuk menyimpan nilai yang berulang. Contoh: `Perempuan`, `Laki-laki`
+
+- ***Console***
+
+Tempat untuk menjalankan perintah/code.
+
+- ***Chunk***
+
+Tempat untuk menempatkan dan menjalankan code pada rmarkdown.

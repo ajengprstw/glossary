@@ -1,0 +1,33 @@
+---
+output:
+  html_document: 
+    css: style.css
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Interactive Plotting
+
+
+- ***User Interface (UI)***
+
+  User interface merupakan tampilan atau bagian visual yang dapat dilihat oleh user/pengguna.
+
+- ***Server***
+
+  Server berisi perintah untuk proses `aggregation` dan membuat visualisasi yang akan ditampilkan pada dashboard.
+
+- ***Dashboard***
+
+  Dashboard merupakan media untuk mengumpulkan visualisasi terkait yang dapat meningkatkan pemahaman informasi yang lebih lengkap.
+
+- ***Deployment***
+
+  Deployment merupakan suatu proses yang bertujuan untuk mendistribusikan suatu `dashboard` yang dapat beroperasi dan diakses secara publik.
+
+- ***Interactive plotting***
+
+  Interactive plotting merupakan upaya meningkatkan informasi yang terdapat pada sebuah visualisasi (`plot`).

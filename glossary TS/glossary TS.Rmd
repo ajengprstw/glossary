@@ -1,0 +1,49 @@
+---
+output:
+  html_document: 
+    css: style.css
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Time Series
+
+
+- ***Autocorrelation***
+
+  `Correlation` antar data `observation` pada periode waktu yang berbeda.
+
+- ***Smoothing***
+
+  Smoothing merupakan transformasi data time series yang dapat membantu melihat pola pada data.
+
+- ***Differencing***
+
+  Differencing merupakan tranformasi data yang digunakan untuk membuat data time series stasioner.
+
+- ***Autoregressive model (AR)***
+
+  `Autoregressive model` hampir sama dengan model `linear regression`, namun `predictor` yang digunakan adalah nilai `target variable` itu sendiri pada masa lampau.
+
+- ***Integrated (I)***
+
+  Menjelaskan mengenai berapa kali model melakukan `differencing`.
+
+- ***Moving average (MA)***
+
+  `Moving average` digunakan untuk melakukan `smoothing` terhadap `error.`
+
+- ***Trend***
+
+  Data `trend` merupakan keadaan ketika observasi cenderung naik atau turun pada suatu periode waktu.
+
+- ***Seasonal***
+
+  Efek `Seasonal` terjadi jika data time series memiliki pola berulang pada siklus tertentu.
+
+- ***Stationary patern***
+
+  Keadaan dimana data time series berada di sekitar rata-rata.
