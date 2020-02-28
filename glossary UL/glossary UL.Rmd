@@ -1,8 +1,8 @@
 ---
 output:
-  pdf_document: default
   html_document: 
     css: style.css
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -13,19 +13,22 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - ***Missing value***
 
-  Keadaan dimana data memiliki nilai yang hilang (tidak diketahui nilainya).
+  Keadaan data memiliki nilai yang hilang (tidak diketahui nilainya).
   
 - ***Standarization***
 
-  Proses untuk menyeragamkan skala data yang berbeda, sering disebut sebagai `scalling`.
+  Proses untuk menyeragamkan skala data yang berbeda, umumnya dikenal sebagai `scaling`.
   
 - ***Covariance***
 
-  Nilai yang menggambarkan hubungan (positif/negatif/tidak ada hubungan) antara dua variabel numerik. Namun `covariance` tidak dapat menggambarkan seberapa erat/kuat hubungan tersebut karena nilai `covariance` tidak memilki batasan yang mutlak (- inf, + inf).
+  Nilai yang menggambarkan hubungan (positif/negatif/tidak ada hubungan) antara dua variabel numerik. Namun, `covariance` tidak dapat menggambarkan seberapa erat/kuat hubungan tersebut karena nilai `covariance` tidak memilki batasan yang mutlak (- inf, + inf).
 
 - ***Correlation***  
   
-  Nilai yang menggambarkan keeratan hubungan (positif/negatif/tidak ada hubungan) antara dua variabel numerik. Nilai `correlation` mendekati 1 artinya kedua variabel berhubungan erat dan hubungannya positif, nilai `correlation` mendekati -1 artinya kedua variabel berhubungan erat dan hubungannya negatif, nilai `correlation` mendekati 0 artinya kedua variabel tidak saling berhubungan.
+  Nilai yang menggambarkan keeratan hubungan (positif/negatif/tidak ada hubungan) antara dua variabel numerik.   
+  - Nilai `correlation` mendekati 1 artinya kedua variabel berhubungan erat dan hubungannya positif  
+  - Nilai `correlation` mendekati -1 artinya kedua variabel berhubungan erat dan hubungannya negatif  
+  - Nilai `correlation` mendekati 0 artinya kedua variabel tidak saling berhubungan  
 
 - ***Principal Component***
 
@@ -33,31 +36,27 @@ knitr::opts_chunk$set(echo = TRUE)
   
 - ***Principal Components Analysis*** 
 
-  Proses untuk membuat `principal comonent`.
-
-- ***Eigen values***
-
-  Nilai yang merepresentasikan jumlah/besar informasi (variansi) yang dimiliki oleh setiap PC.
+  Proses interpretasi model principal component. Analisis yang dilakukan pada umumnya terkait hubungan antarvariabel, sebaran data berdasarkan principal component yang terbentuk, dan total informasi yang berhasil dipertahankan.
   
-- ***Eigen vector***
+- ***Eigen values dan Eigen vector***
 
-  Kumpulan nilai yang memproyeksikan data awal ke setiap `principal component`
+  Pasangan value dan vector yang merepresentasikan informasi (variansi) dari sebuah matriks. Pasangan nilai ini digunakan untuk membangun nilai principal component.
   
 - ***Biplot***
 
-  Plot yang menggambarkan posisi data berdasarkan hasil `principal component analysis` dan besarnya pengaruh setiap variabel ke `principal component` 1 dan `principal component` 2.
+  Plot yang menggambarkan posisi data berdasarkan nilai principal component dan pengaruh tiap variabel ke dua dimensi `principal component`.
   
 - ***Outlier***
   
-  Data yang nilainya sangat ekstrim, sering disebut sebagai data yang anomali.  
+  Data yang nilainya sangat ekstrim dibandingkan dengan data lainnya, pada konteks tertentu dapat diidentifikasi sebagai data anomali.  
   
-- ***Reconstruct***
+- ***Reconstruction***
 
-  Proses transformasi hasil `principal component analysis` ke data awal.
+  Proses transformasi nilai principal component ke variabel awal.
 
 - ***Clustering***
 
-  Proses mengelompokkan data berdasarkan jarak terdekat (kemiripan).
+  Proses pengelompokkan data berdasarkan jarak antarobservasi (kemiripan).
   
 - ***Centroid***
   
@@ -65,7 +64,7 @@ knitr::opts_chunk$set(echo = TRUE)
   
 - ***Euclidean distance***
 
-  Salah satu ukuran jarak, digunakan pada algoritma `k-means clustering`.
+  Salah satu ukuran jarak, digunakan pada algoritma K-means Clustering.
   
 - ***Between sum of square***
 
@@ -77,8 +76,8 @@ knitr::opts_chunk$set(echo = TRUE)
   
 - ***Total sum of square***
 
-  Jumlah nilai `Between sum of square` dan nilai `Within sum of square`
+  Jarak tiap observasi ke `centroid` global (titik tengah apabila hanya terdapat satu cluster).
 
 - ***Elbow method***
 
-  Salah satu metode yang digunakan untuk menentukan jumlah cluster yang optimum.
+  Salah satu metode yang dapat digunakan untuk menentukan jumlah cluster yang optimum dilihat dari titik potong nilai K yang tidak lagi secara signifikan meningkatkan homogenitas cluster.
