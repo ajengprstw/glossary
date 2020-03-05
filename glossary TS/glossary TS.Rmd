@@ -9,20 +9,56 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Time Series
+# Time Series and Forecasting
 
 
-- ***Autocorrelation***
+- ***Trend***
+  
+  Data `time series` yang memiliki observasi membentuk pola cenderung naik atau turun pada periode waktu tertentu.
 
-  `Correlation` antar data `observation` pada periode waktu yang berbeda.
+- ***Cyclic***
+
+  `Cyclic pattern` terjadi jika data `time series` memiliki pola berulang yang tidak tetap dan dipengaruhi oleh siklus bisnis.
+
+- ***Seasonal***
+
+  Efek `Seasonal` terjadi jika data `time series` memiliki pola berulang yang tetap pada periode tertentu.
 
 - ***Smoothing***
 
-  Smoothing merupakan transformasi data time series yang dapat membantu melihat pola pada data.
+  `Smoothing` merupakan transformasi data `time series` yang dapat membantu melihat pola pada data dengan menghapus variasi antar observasi.
+
+- ***Alpha***
+
+  Parameter untuk `smoothing` nilai `error` pada model `exponential smoothing`.
+  
+- ***Beta***
+
+  Parameter untuk `smoothing` nilai `trend` pada model `exponential smoothing`..
+  
+- ***Gamma***
+
+  Parameter untuk `smoothing` nilai `seasonal` pada model `exponential smoothing`.
 
 - ***Differencing***
 
-  Differencing merupakan tranformasi data yang digunakan untuk membuat data time series stasioner.
+  `Differencing` merupakan transformasi data yang digunakan untuk membuat data `time series` menjadi stasioner.
+  
+- ***Additive***
+
+  Peningkatan nilai suatu observasi baik pada komponen `trend` ataupun `seasonal` secara konstan.
+  
+- ***Multiplicative***
+
+  Peningkatan nilai suatu observasi baik pada komponen `trend` ataupun `seasonal` yang semakin membesar.
+  
+- ***Autocorrelation***
+
+  Hubungan antara suatu variabel dengan dirinya sendiri pada periode waktu yang berbeda.
+
+- ***Stationarity patern***
+
+  Keadaan dimana data `time series` berada di sekitar rata-rata.
 
 - ***Autoregressive model (AR)***
 
@@ -36,14 +72,4 @@ knitr::opts_chunk$set(echo = TRUE)
 
   `Moving average` digunakan untuk melakukan `smoothing` terhadap `error.`
 
-- ***Trend***
 
-  Data `trend` merupakan keadaan ketika observasi cenderung naik atau turun pada suatu periode waktu.
-
-- ***Seasonal***
-
-  Efek `Seasonal` terjadi jika data time series memiliki pola berulang pada siklus tertentu.
-
-- ***Stationary patern***
-
-  Keadaan dimana data time series berada di sekitar rata-rata.

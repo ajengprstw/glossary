@@ -374,27 +374,39 @@ summary {
 </div>
 
 
-<div id="time-series" class="section level1">
-<h1>Time Series</h1>
+<div id="time-series-and-forecasting" class="section level1">
+<h1>Time Series and Forecasting</h1>
 <ul>
-<li><p><strong><em>Autocorrelation</em></strong></p>
-<p><code>Correlation</code> antar data <code>observation</code> pada periode waktu yang berbeda.</p></li>
+<li><p><strong><em>Trend</em></strong></p>
+<p>Data <code>time series</code> yang memiliki observasi membentuk pola cenderung naik atau turun pada periode waktu tertentu.</p></li>
+<li><p><strong><em>Cyclic</em></strong></p>
+<p><code>Cyclic pattern</code> terjadi jika data <code>time series</code> memiliki pola berulang yang tidak tetap dan dipengaruhi oleh siklus bisnis.</p></li>
+<li><p><strong><em>Seasonal</em></strong></p>
+<p>Efek <code>Seasonal</code> terjadi jika data <code>time series</code> memiliki pola berulang yang tetap pada periode tertentu.</p></li>
 <li><p><strong><em>Smoothing</em></strong></p>
-<p>Smoothing merupakan transformasi data time series yang dapat membantu melihat pola pada data.</p></li>
+<p><code>Smoothing</code> merupakan transformasi data <code>time series</code> yang dapat membantu melihat pola pada data dengan menghapus variasi antar observasi.</p></li>
+<li><p><strong><em>Alpha</em></strong></p>
+<p>Parameter untuk <code>smoothing</code> nilai <code>error</code> pada model <code>exponential smoothing</code>.</p></li>
+<li><p><strong><em>Beta</em></strong></p>
+<p>Parameter untuk <code>smoothing</code> nilai <code>trend</code> pada model <code>exponential smoothing</code>..</p></li>
+<li><p><strong><em>Gamma</em></strong></p>
+<p>Parameter untuk <code>smoothing</code> nilai <code>seasonal</code> pada model <code>exponential smoothing</code>.</p></li>
 <li><p><strong><em>Differencing</em></strong></p>
-<p>Differencing merupakan tranformasi data yang digunakan untuk membuat data time series stasioner.</p></li>
+<p><code>Differencing</code> merupakan transformasi data yang digunakan untuk membuat data <code>time series</code> menjadi stasioner.</p></li>
+<li><p><strong><em>Additive</em></strong></p>
+<p>Peningkatan nilai suatu observasi baik pada komponen <code>trend</code> ataupun <code>seasonal</code> secara konstan.</p></li>
+<li><p><strong><em>Multiplicative</em></strong></p>
+<p>Peningkatan nilai suatu observasi baik pada komponen <code>trend</code> ataupun <code>seasonal</code> yang semakin membesar.</p></li>
+<li><p><strong><em>Autocorrelation</em></strong></p>
+<p>Hubungan antara suatu variabel dengan dirinya sendiri pada periode waktu yang berbeda.</p></li>
+<li><p><strong><em>Stationarity patern</em></strong></p>
+<p>Keadaan dimana data <code>time series</code> berada di sekitar rata-rata.</p></li>
 <li><p><strong><em>Autoregressive model (AR)</em></strong></p>
 <p><code>Autoregressive model</code> hampir sama dengan model <code>linear regression</code>, namun <code>predictor</code> yang digunakan adalah nilai <code>target variable</code> itu sendiri pada masa lampau.</p></li>
 <li><p><strong><em>Integrated (I)</em></strong></p>
 <p>Menjelaskan mengenai berapa kali model melakukan <code>differencing</code>.</p></li>
 <li><p><strong><em>Moving average (MA)</em></strong></p>
 <p><code>Moving average</code> digunakan untuk melakukan <code>smoothing</code> terhadap <code>error.</code></p></li>
-<li><p><strong><em>Trend</em></strong></p>
-<p>Data <code>trend</code> merupakan keadaan ketika observasi cenderung naik atau turun pada suatu periode waktu.</p></li>
-<li><p><strong><em>Seasonal</em></strong></p>
-<p>Efek <code>Seasonal</code> terjadi jika data time series memiliki pola berulang pada siklus tertentu.</p></li>
-<li><p><strong><em>Stationary patern</em></strong></p>
-<p>Keadaan dimana data time series berada di sekitar rata-rata.</p></li>
 </ul>
 </div>
 
