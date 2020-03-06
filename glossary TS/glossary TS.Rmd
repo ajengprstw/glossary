@@ -12,6 +12,10 @@ knitr::opts_chunk$set(echo = TRUE)
 # Time Series and Forecasting
 
 
+- ***Decomposition***
+
+  Merupakan proses menguraikan data time series menjadi beberapa bagian yaitu `trend`, `seasonal`, dan `error`.
+  
 - ***Trend***
   
   Data `time series` yang memiliki observasi membentuk pola cenderung naik atau turun pada periode waktu tertentu.
@@ -23,6 +27,10 @@ knitr::opts_chunk$set(echo = TRUE)
 - ***Seasonal***
 
   Efek `Seasonal` terjadi jika data `time series` memiliki pola berulang yang tetap pada periode tertentu.
+  
+- ***Seasonality adjusted***
+
+  Penyesuaian data `time series` dengan menghapus komponen `seasonal`.
 
 - ***Smoothing***
 
