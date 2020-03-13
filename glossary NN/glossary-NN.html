@@ -370,65 +370,65 @@ summary {
 <h1>Neural Network</h1>
 <ul>
 <li><p><strong><em>Target variable </em></strong></p>
-<p><code>Variable</code> yang ingin diprediksi/dimodelkan, sering disebut sebagai <code>respon/dependent variable</code>.</p></li>
+<p>Variable yang nilainya dipengaruhi oleh <code>predictor</code> dan akan diprediksi nilainya, sering disebut sebagai respon/dependent variable.</p></li>
 <li><p><strong><em>Predictor</em></strong></p>
-<p><code>Variable</code> yang digunakan untuk memprediksi <code>target variable</code>, sering disebut sebagi <code>independent variable</code>.</p></li>
+<p>Variable yang mempengaruhi nilai <code>target variable</code> dan digunakan untuk memprediksi tersebut, sering disebut sebagi independent variable.</p></li>
 <li><p><strong><em>Feature engineering</em></strong></p>
-<p>Tahapan untuk menambah jumlah <code>variable</code>/kolom berdasarkan informasi dari <code>variable</code> lain yag sudah ada.</p></li>
+<p>Menambahkan informasi (variabel/kolom) berdasarkan informasi dari variabel lain yang sudah ada.</p></li>
 <li><p><strong><em>Missing value</em></strong></p>
-<p>Keadaan dimana data memiliki nilai yang hilang (tidak diketahui nilainya).</p></li>
+<p>Keadaan data memiliki nilai yang hilang (tidak diketahui nilainya).</p></li>
 <li><p><strong><em>Standarization</em></strong></p>
-<p>Proses untuk menyeragamkan skala data yang berbeda, sering disebut sebagai <code>scalling</code>.</p></li>
+<p>Proses untuk menyeragamkan skala data yang berbeda, sering disebut sebagai <code>scaling</code>.</p></li>
 <li><p><strong><em>Data train</em></strong></p>
-<p>Bagian data yang digunakan untuk membuat model.</p></li>
+<p>Bagian data yang digunakan untuk membuat model (training model).</p></li>
 <li><p><strong><em>Data test</em></strong></p>
-<p>Bagian data yang digunakan untuk mengevaluasi kebaikan model.</p></li>
+<p>Bagian data yang digunakan untuk mengevaluasi performa model (testing model).</p></li>
 <li><p><strong><em>Cross Validation</em></strong></p>
-<p>Proses untuk membagi data menjadi dua bagian, yaitu <code>data train</code> dan <code>data test</code>.</p></li>
+<p>Membagi data lengkap/utuh menjadi dua bagian data, yaitu <code>data train</code> dan <code>data test</code>.</p></li>
 <li><p><strong><em>Class imbalance</em></strong></p>
 <p>Keadaan dimana suatu kategori/level lebih mendominasi keseluruhan <code>target variable</code> (kelas mayoritas) dibandingkan kategori/level lainnya (kelas minoritas).</p></li>
 <li><p><strong><em>Sampling</em></strong></p>
-<p>Megambil sebanyak n bagian data secara acak.</p></li>
+<p>Mengambil sebanyak n bagian data secara acak.</p></li>
 <li><p><strong><em>Down-sample</em></strong></p>
 <p>Proses <code>sampling</code> pada observasi kelas mayoritas, sebanyak jumlah observasi pada kelas minoritas. Tujuannya untuk menyamakan jumlah observasi pada kelas mayoritas dan minoritas.</p></li>
 <li><p><strong><em>Up-sample</em></strong></p>
 <p>Proses <code>sampling</code> pada observasi kelas minoritas, sebanyak jumlah observasi pada kelas mayoritas. Tujuannya untuk menyamakan jumlah observasi pada kelas mayoritas dan minoritas.</p></li>
 <li><p><strong><em>Optimization</em></strong></p>
-<p>Metode yang digunakan untuk meminimumkan error/kesalahan pada model neural network.</p></li>
-<li><p><strong><em>Node</em></strong></p>
-<p>Unit terkecil pada arsitektur neural network yang berfungsi untuk melakukan transfer informasi, sering disebut sebagai <code>neuron</code>.</p></li>
+<p>Proses mengoptimumkan suatu nilai dengan menggunakan fungsi turunan, pada model neural network meminimumkan nilai error/kesalahan.</p></li>
+<li><p><strong><em>Nodes</em></strong></p>
+<p>Unit terkecil pada arsitektur neural network yang berfungsi untuk mengekstrak informasi (feature extraction) dan meneruskan informasi tersebut, sering disebut sebagai <code>neuron</code>.</p></li>
 <li><p><strong><em>Input layer</em></strong></p>
-<p>Lapisan pertama pada arsitektur neural network. Jumlah <code>node</code> pada <code>input layer</code> bergantung pada jumlah <code>predictor</code>.</p></li>
+<p>Lapisan pertama pada arsitektur neural network yang terdiri dari kumpulan <code>nodes</code>. Jumlah <code>nodes</code> pada <code>input layer</code> bergantung pada jumlah <code>predictor</code> pada data.</p></li>
 <li><p><strong><em>Output layer</em></strong></p>
-<p>Lapisan terakhir pada arsitektur neural network. Jumlah <code>node</code> pada <code>output layer</code> bergantung pada jenis <code>target variable</code>.</p></li>
+<p>Lapisan terakhir pada arsitektur neural network yang terdiri dari sebuah <code>nodes</code> atau beberapa <code>nodes</code> bergantung pada jenis <code>target variable</code>.</p></li>
 <li><p><strong><em>Hidden layer</em></strong></p>
-<p>Lapisan yang terletak di antara <code>input layer</code> dan <code>output layer</code>. Jumlah <code>hidden layer</code> dan jumlah <code>node</code> di setiap <code>hidden layer</code> ditentukan oleh peneliti.</p></li>
+<p>Lapisan yang terletak di antara <code>input layer</code> dan <code>output layer</code>. Jumlah <code>hidden layer</code> dan jumlah <code>nodes</code> di setiap <code>hidden layer</code> ditentukan oleh peneliti.</p></li>
 <li><p><strong><em>Weight</em></strong></p>
-<p>Besar bobot yang menggambarkan besar informasi yang diteruskan dari setiap <code>node</code>. <code>Weight</code> ditetapkan secara random (acak).</p></li>
+<p>Besar bobot yang menggambarkan besar informasi yang diteruskan dari setiap <code>nodes</code>. <code>Weight</code> ditetapkan secara acak.</p></li>
 <li><p><strong><em>Linear regression</em></strong></p>
-<p>Suatu metode yang digunakan untuk memprediksi <code>target variable</code> bertipe numerik/angka.</p></li>
+<p>Salah satu metode machine learning yang digunakan untuk memprediksi <code>target variable</code> bertipe numerik/angka.</p></li>
 <li><p><strong><em>Bias</em></strong></p>
-<p>Pada <code>linear regression</code> sama seperti nilai <code>intersept (b0)</code>. <code>Bias</code> ditetapkan secara random (acak).</p></li>
-<li><p><strong><em>Activation funcion</em></strong></p>
-<p>Fungsi yang digunakan untuk mengubah interval nilai (informasi) yang masuk ke setiap <code>node</code> pada <code>hidden layer</code> dan <code>output layer</code>.</p></li>
+<p>Pada <code>linear regression</code> sama seperti nilai <code>intercept (b0)</code>.</p></li>
+<li><p><strong><em>Activation function</em></strong></p>
+<p>Fungsi yang digunakan untuk mengubah interval nilai informasi yang masuk ke setiap <code>nodes</code> pada <code>hidden layer</code> dan <code>output layer</code>.</p></li>
 <li><p><strong><em>Cost function</em></strong></p>
-<p>Fungsi error.</p></li>
+<p>Fungsi error yang digunakan pada model neural network.</p></li>
 <li><p><strong><em>Feedforward</em></strong></p>
-<p>Proses pada neural network yang dimulai dari <code>input layer</code> hingga menghasilkan nilai prediksi.</p></li>
+<p>Proses pada neural network yang dimulai dari <code>input layer</code> hingga menghasilkan nilai prediksi pada <code>output layer</code>.</p></li>
 <li><p><strong><em>Backpropagation</em></strong></p>
-<p>Proses pada neural network ketika melakukan optimisasi dan melakukan update <code>weight</code>.</p></li>
+<p>Proses pada neural network ketika melakukan <code>optimization</code> dan melakukan update <code>weight</code>.</p></li>
 <li><p><strong><em>Epoch</em></strong></p>
 <p>Satu kali proses <code>feedforward</code> dan <code>backpropagation</code>.</p></li>
 <li><p><strong><em>Gradient</em></strong></p>
-<p>Hasil turunan dari <code>cost function</code>.</p></li>
+<p>Hasil turunan dari fungsi error/<code>cost function</code>.</p></li>
 <li><p><strong><em>Dummy Variable</em></strong></p>
 <p>Hasil transformasi variabel kategorik dengan nilai 0 atau 1. Variabel ini digunakan untuk membuat data kategorik yang bersifat kualitatif menjadi kuantitatif.</p></li>
 <li><p><strong><em>Learning rate</em></strong></p>
-<p>Besar nilai yang menentukan seberapa cepat <code>gradient</code> yang digunakan untuk melakukan update <code>weight</code>.</p></li>
+<p>Besar nilai yang menentukan seberapa cepat proses update <code>weight</code> hingga diperoleh nilai erorr yang konstan.</p></li>
 <li><p><strong><em>Batch size</em></strong></p>
 <p>Jumlah observasi yang diikutsertakan untuk satu iterasi.</p></li>
 <li><p><strong><em>Confusion Matrix</em></strong></p>
-<p>Metrics yang digunakan untuk mengukur kebaikan model classification, terdiri dari <code>accuracy</code>, <code>recall</code>, <code>specificity</code>, dan <code>precision</code>.</p></li>
+<p>Metriks yang digunakan untuk mengukur kebaikan model classification, terdiri dari <code>accuracy</code>, <code>recall</code>, <code>specificity</code>, dan <code>precision</code>.</p></li>
 <li><p><strong><em>ROC (Receiver Operating Characteristic)</em></strong></p>
 <p>Kurva yang menggambarkan performa model klasifikasi untuk seluruh <code>threshold</code>.</p></li>
 <li><p><strong><em>AUC</em></strong></p>

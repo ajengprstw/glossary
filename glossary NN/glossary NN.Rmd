@@ -13,35 +13,35 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - ***Target variable ***
 
-  `Variable` yang ingin diprediksi/dimodelkan, sering disebut sebagai `respon/dependent variable`.
+  Variable yang nilainya dipengaruhi oleh `predictor` dan akan diprediksi nilainya, sering disebut sebagai respon/dependent variable.
   
 - ***Predictor***
 
-  `Variable` yang digunakan untuk memprediksi `target variable`, sering disebut sebagi `independent variable`.
+  Variable yang mempengaruhi nilai `target variable` dan digunakan untuk memprediksi tersebut, sering disebut sebagi independent variable.
   
 - ***Feature engineering***
 
-  Tahapan untuk menambah jumlah `variable`/kolom berdasarkan informasi dari `variable` lain yag sudah ada.
+  Menambahkan informasi (variabel/kolom) berdasarkan informasi dari variabel lain yang sudah ada.
   
 - ***Missing value***
 
-  Keadaan dimana data memiliki nilai yang hilang (tidak diketahui nilainya).
-  
+  Keadaan data memiliki nilai yang hilang (tidak diketahui nilainya).
+
 - ***Standarization***
 
-  Proses untuk menyeragamkan skala data yang berbeda, sering disebut sebagai `scalling`.
+  Proses untuk menyeragamkan skala data yang berbeda, sering disebut sebagai `scaling`.
   
 - ***Data train***
 
-  Bagian data yang digunakan untuk membuat model.
+  Bagian data yang digunakan untuk membuat model (training model).
 
 - ***Data test***
 
-  Bagian data yang digunakan untuk mengevaluasi kebaikan model.
+  Bagian data yang digunakan untuk mengevaluasi performa model (testing model).
 
 - ***Cross Validation***
 
-  Proses untuk membagi data menjadi dua bagian, yaitu `data train` dan `data test`.
+  Membagi data lengkap/utuh menjadi dua bagian data, yaitu `data train` dan `data test`.
   
 - ***Class imbalance***
 
@@ -49,7 +49,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - ***Sampling***
 
-  Megambil sebanyak n bagian data secara acak.
+  Mengambil sebanyak n bagian data secara acak.
 
 - ***Down-sample***
 
@@ -61,51 +61,51 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - ***Optimization***
 
-  Metode yang digunakan untuk meminimumkan error/kesalahan pada model neural network.
+  Proses mengoptimumkan suatu nilai dengan menggunakan fungsi turunan, pada model neural network meminimumkan nilai error/kesalahan.
 
-- ***Node***
+- ***Nodes***
 
-  Unit terkecil pada arsitektur neural network yang berfungsi untuk melakukan transfer informasi, sering disebut sebagai `neuron`.
+  Unit terkecil pada arsitektur neural network yang berfungsi untuk mengekstrak informasi (feature extraction) dan meneruskan informasi tersebut, sering disebut sebagai `neuron`.
 
 - ***Input layer***
 
-  Lapisan pertama pada arsitektur neural network. Jumlah `node` pada `input layer` bergantung pada jumlah `predictor`.
+  Lapisan pertama pada arsitektur neural network yang terdiri dari kumpulan `nodes`. Jumlah `nodes` pada `input layer` bergantung pada jumlah `predictor` pada data.
 
 - ***Output layer***
 
-  Lapisan terakhir pada arsitektur neural network. Jumlah `node` pada `output layer` bergantung pada jenis `target variable`.
+  Lapisan terakhir pada arsitektur neural network yang terdiri dari sebuah `nodes` atau beberapa `nodes` bergantung pada jenis `target variable`.
 
 - ***Hidden layer***
 
-  Lapisan yang terletak di antara `input layer` dan `output layer`. Jumlah `hidden layer` dan jumlah `node` di setiap `hidden layer` ditentukan oleh peneliti.
+  Lapisan yang terletak di antara `input layer` dan `output layer`. Jumlah `hidden layer` dan jumlah `nodes` di setiap `hidden layer` ditentukan oleh peneliti.
   
 - ***Weight***
 
-  Besar bobot yang menggambarkan besar informasi yang diteruskan dari setiap `node`. `Weight` ditetapkan secara random (acak).
+  Besar bobot yang menggambarkan besar informasi yang diteruskan dari setiap `nodes`. `Weight` ditetapkan secara acak.
 
 - ***Linear regression***
 
-  Suatu metode yang digunakan untuk memprediksi `target variable` bertipe numerik/angka.
+  Salah satu metode machine learning yang digunakan untuk memprediksi `target variable` bertipe numerik/angka.
 
 - ***Bias*** 
 
-  Pada `linear regression` sama seperti nilai `intersept (b0)`. `Bias` ditetapkan secara random (acak). 
+  Pada `linear regression` sama seperti nilai `intercept (b0)`. 
 
-- ***Activation funcion***
+- ***Activation function***
 
-  Fungsi yang digunakan untuk mengubah interval nilai (informasi) yang masuk ke setiap `node` pada `hidden layer` dan `output layer`.
+  Fungsi yang digunakan untuk mengubah interval nilai informasi yang masuk ke setiap `nodes` pada `hidden layer` dan `output layer`.
   
 - ***Cost function***
 
-  Fungsi error.
+  Fungsi error yang digunakan pada model neural network.
 
 - ***Feedforward*** 
 
-  Proses pada neural network yang dimulai dari `input layer` hingga menghasilkan nilai prediksi.
+  Proses pada neural network yang dimulai dari `input layer` hingga menghasilkan nilai prediksi pada `output layer`.
 
 - ***Backpropagation***
 
-  Proses pada neural network ketika melakukan optimisasi dan melakukan update `weight`.
+  Proses pada neural network ketika melakukan `optimization` dan melakukan update `weight`.
 
 - ***Epoch***
 
@@ -113,7 +113,7 @@ knitr::opts_chunk$set(echo = TRUE)
   
 - ***Gradient***
 
-  Hasil turunan dari `cost function`.
+  Hasil turunan dari fungsi error/`cost function`.
   
 - ***Dummy Variable***
 
@@ -121,7 +121,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - ***Learning rate***
 
-  Besar nilai yang menentukan seberapa cepat `gradient` yang digunakan untuk melakukan update `weight`.
+  Besar nilai yang menentukan seberapa cepat proses update `weight` hingga diperoleh nilai erorr yang konstan.
 
 - ***Batch size***
 
@@ -129,7 +129,7 @@ knitr::opts_chunk$set(echo = TRUE)
   
 - ***Confusion Matrix***
 
-  Metrics yang digunakan untuk mengukur kebaikan model classification, terdiri dari `accuracy`, `recall`, `specificity`, dan `precision`.
+  Metriks yang digunakan untuk mengukur kebaikan model classification, terdiri dari `accuracy`, `recall`, `specificity`, dan `precision`.
 
 - ***ROC (Receiver Operating Characteristic)***
 
@@ -154,3 +154,4 @@ knitr::opts_chunk$set(echo = TRUE)
 - ***Mean absolute error (MAE)***
 
   Rata-rata dari absolut error. Ukuran yang bisa digunakan untuk mengukur kebaikan model.
+  
