@@ -13,11 +13,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - ***Target variable ***
 
-  Variable yang nilainya dipengaruhi oleh `predictor` dan akan diprediksi nilainya, sering disebut sebagai respon/dependent variable.
+  Variable yang nilainya dipengaruhi oleh *predictor variable* dan akan diprediksi nilainya, sering disebut sebagai respon/dependent variable.
   
-- ***Predictor***
+- ***Predictor variable***
 
-  Variable yang mempengaruhi nilai `target variable` dan digunakan untuk memprediksi tersebut, sering disebut sebagi independent variable.
+  Variable yang mempengaruhi dan digunakan untuk memprediksi nilai *target variable*, sering disebut sebagai independent variable.
   
 - ***Feature engineering***
 
@@ -25,11 +25,11 @@ knitr::opts_chunk$set(echo = TRUE)
   
 - ***Missing value***
 
-  Keadaan data memiliki nilai yang hilang (tidak diketahui nilainya).
+  Keadaan di mana data memiliki nilai yang hilang (tidak diketahui nilainya/NA).
 
 - ***Standarization***
 
-  Proses untuk menyeragamkan skala data yang berbeda, sering disebut sebagai `scaling`.
+  Proses untuk menyeragamkan interval data yang berbeda, sering disebut sebagai *scaling* atau *normalization*.
   
 - ***Data train***
 
@@ -41,79 +41,71 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - ***Cross Validation***
 
-  Membagi data lengkap/utuh menjadi dua bagian data, yaitu `data train` dan `data test`.
+  Proses membagi data lengkap/utuh menjadi dua bagian, yaitu *data train* dan *data test*.
   
 - ***Class imbalance***
 
-  Keadaan dimana suatu kategori/level lebih mendominasi keseluruhan `target variable` (kelas mayoritas) dibandingkan kategori/level lainnya (kelas minoritas).
+  Keadaan di mana suatu kategori pada *target variable* memiliki proporsi lebih mendominasi dibandingkan kategori lainnya.
 
 - ***Sampling***
 
-  Mengambil sebanyak n bagian data secara acak.
+  Proses mengambil sebanyak n bagian data, umumnya dilakukan secara acak.
 
 - ***Down-sample***
 
-  Proses `sampling` pada observasi kelas mayoritas, sebanyak jumlah observasi pada kelas minoritas. Tujuannya untuk menyamakan jumlah observasi pada kelas mayoritas dan minoritas.
-
+  Proses *sampling* pada observasi kelas mayoritas, sehingga jumlahnya sama dengan jumlah observasi pada kelas minoritas.
+  
 - ***Up-sample***
-
-  Proses `sampling` pada observasi kelas minoritas, sebanyak jumlah observasi pada kelas mayoritas. Tujuannya untuk menyamakan jumlah observasi pada kelas mayoritas dan minoritas.
+  
+  Proses *sampling* pada observasi kelas minoritas, sehingga jumlahnya sama dengan jumlah observasi pada kelas mayoritas.
 
 - ***Optimization***
 
-  Proses mengoptimumkan suatu nilai dengan menggunakan fungsi turunan, pada model neural network meminimumkan nilai error/kesalahan.
+  Proses mengoptimumkan suatu nilai. Pada model neural network bertujuan untuk meminimumkan fungsi error dengan menggunakan fungsi turunan.
 
 - ***Nodes***
 
-  Unit terkecil pada arsitektur neural network yang berfungsi untuk mengekstrak informasi (feature extraction) dan meneruskan informasi tersebut, sering disebut sebagai `neuron`.
+  Unit terkecil pada arsitektur neural network yang berfungsi untuk menyimpan informasi dan meneruskan informasi tersebut, sering disebut sebagai *neuron*.
 
 - ***Input layer***
 
-  Lapisan pertama pada arsitektur neural network yang terdiri dari kumpulan `nodes`. Jumlah `nodes` pada `input layer` bergantung pada jumlah `predictor` pada data.
+  Lapisan pertama pada arsitektur neural network yang terdiri dari kumpulan *nodes*. Jumlah *nodes* pada *input layer* bergantung pada jumlah *predictor*.
 
 - ***Output layer***
 
-  Lapisan terakhir pada arsitektur neural network yang terdiri dari sebuah `nodes` atau beberapa `nodes` bergantung pada jenis `target variable`.
+  Lapisan terakhir pada arsitektur neural network yang terdiri dari satu atau beberapa *nodes*, bergantung pada tujuannya (regresi/klasifikasi).
 
 - ***Hidden layer***
 
-  Lapisan yang terletak di antara `input layer` dan `output layer`. Jumlah `hidden layer` dan jumlah `nodes` di setiap `hidden layer` ditentukan oleh peneliti.
+  Lapisan yang terletak di antara *input layer* dan *output layer*. Jumlah *hidden layer* dan jumlah *nodes* di setiap *hidden layer* ditentukan oleh *user*.
   
 - ***Weight***
 
-  Besar bobot yang menggambarkan besar informasi yang diteruskan dari setiap `nodes`. `Weight` ditetapkan secara acak.
-
-- ***Linear regression***
-
-  Salah satu metode machine learning yang digunakan untuk memprediksi `target variable` bertipe numerik/angka.
+  Bobot yang menggambarkan besar informasi yang diteruskan dari setiap *nodes*. *Weight* diinisialisasi secara acak.
 
 - ***Bias*** 
 
-  Pada `linear regression` sama seperti nilai `intercept (b0)`. 
+  Pada *linear regression* sama seperti nilai *intercept (b0)*. 
 
 - ***Activation function***
 
-  Fungsi yang digunakan untuk mengubah interval nilai informasi yang masuk ke setiap `nodes` pada `hidden layer` dan `output layer`.
+  Fungsi yang digunakan untuk mengubah interval nilai informasi yang masuk ke setiap *nodes* pada *hidden layer* dan *output layer*.
   
 - ***Cost function***
 
-  Fungsi error yang digunakan pada model neural network.
+  Fungsi error yang akan dioptimisasi pada model neural network.
 
 - ***Feedforward*** 
 
-  Proses pada neural network yang dimulai dari `input layer` hingga menghasilkan nilai prediksi pada `output layer`.
+  Proses pada neural network yang dimulai dari *input layer* hingga menghasilkan nilai prediksi pada *output layer*.
 
 - ***Backpropagation***
 
-  Proses pada neural network ketika melakukan `optimization` dan melakukan update `weight`.
+  Proses pada neural network ketika melakukan *optimization* dari cost function dan melakukan update *weight*.
 
-- ***Epoch***
-
-  Satu kali proses `feedforward` dan `backpropagation`.
-  
 - ***Gradient***
 
-  Hasil turunan dari fungsi error/`cost function`.
+  Hasil turunan pertama dari fungsi error/*cost function* yang merupakan kemiringan dari titik potong *cost function* di titik tersebut.
   
 - ***Dummy Variable***
 
@@ -121,23 +113,19 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - ***Learning rate***
 
-  Besar nilai yang menentukan seberapa cepat proses update `weight` hingga diperoleh nilai erorr yang konstan.
+  Besar nilai yang menentukan seberapa cepat proses update *weight*.
 
-- ***Batch size***
+- ***Batch***
 
-  Jumlah observasi yang diikutsertakan untuk satu iterasi.
+  Proses membagi data menjadi beberapa bagian. Setiap bagian akan diikutsertakan ke dalam proses *feedforward* dan *backpropagation*.
+
+- ***Epoch***
+
+  Keadaan di mana seluruh *batch* telah menyelesaikan proses *feedforward* dan *backpropagation*.
   
 - ***Confusion Matrix***
 
-  Metriks yang digunakan untuk mengukur kebaikan model classification, terdiri dari `accuracy`, `recall`, `specificity`, dan `precision`.
-
-- ***ROC (Receiver Operating Characteristic)***
-
-  Kurva yang menggambarkan performa model klasifikasi untuk seluruh `threshold`.
-
-- ***AUC***
- 
-  Luas area di bawah kurva `ROC`, menggambarkan keberhasilan model klasifikasi dalam memprediksi/membedakan kedua kelas dari `target variable`.
+  Metriks yang digunakan untuk mengukur kebaikan model classification, terdiri dari *accuracy*, *recall*, *specificity*, dan *precision*.
  
 - ***Sum squared error (SSE)***
 
@@ -149,9 +137,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - ***Root Mean squared error (RMSE)***
 
-  Akar kuadrat dari `MSE`.
+  Akar kuadrat dari *MSE*.
   
 - ***Mean absolute error (MAE)***
 
   Rata-rata dari absolut error. Ukuran yang bisa digunakan untuk mengukur kebaikan model.
-  
+
